@@ -69,8 +69,9 @@ html {
 
 p {
   font-family: crimson text;
-  font-size: 30px;
+  font-size: 20px;
   margin: 50px;
+  color: black;
 }
 
 img,
@@ -80,14 +81,15 @@ h1 {
 
 h1 {
   color: #ffffff;
-  font-size: 130px;
+  font-size: 70px;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
   margin: 40px;
   padding-top: 10px;
+  color: black;
 }
 
 .header {
@@ -103,11 +105,13 @@ h2 {
 .col2 {
   background-color: #ecdfcf;
   padding-top: 40px;
+  color: black;
 }
 
 .col3 {
   background-color: #ecdfcf;
   padding-top: 40px;
+  color: black;
 }
 
 footer {
@@ -123,6 +127,12 @@ footer {
 .link:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+.img,
+video {
+  padding: 20px;
+  place-items: right;
 }
 
 @media (min-width: 800px) {
@@ -195,11 +205,18 @@ footer {
 
   h1 {
     color: #ffffff;
+    font-size: 130px;
   }
 
   h2 {
     font-size: 70px;
     text-align: center;
+    color: black;
+  }
+
+  p {
+    font-family: crimson text;
+    font-size: 30px;
   }
 
   .header {
@@ -215,11 +232,13 @@ footer {
   .col2 {
     background-color: #ecdfcf;
     padding-top: 80px;
+    color: black;
   }
 
   .col3 {
     background-color: #ecdfcf;
     padding-top: 80px;
+    color: black;
   }
 
   footer {
