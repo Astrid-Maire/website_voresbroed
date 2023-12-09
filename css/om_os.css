@@ -69,6 +69,11 @@ h2 {
   background-color: #ecdfcf;
 }
 
+footer {
+  background-color: black;
+  color: #fff;
+}
+
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
@@ -154,5 +159,10 @@ h2 {
 
   .col3 {
     background-color: #ecdfcf;
+  }
+
+  footer {
+    background-color: black;
+    color: #fff;
   }
 }
