@@ -12,6 +12,16 @@ img {
   display: block;
 }
 
+.hero_3 {
+  display: grid;
+  place-items: center;
+}
+
+img,
+h1 {
+  grid-area: 1 / 1;
+}
+
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
