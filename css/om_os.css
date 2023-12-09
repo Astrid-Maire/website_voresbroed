@@ -15,22 +15,31 @@ img {
 .hero_3 {
   display: grid;
   place-items: center;
+  background-color: black;
 }
 
 header {
   font-family: crimson text;
   font-weight: bold;
   font-size: 22px;
+  color: #fff;
   background-color: black;
 }
 
-ul {
-  color: #ffffff;
+ul li a {
+  font-family: crimson text;
+  font-size: 22px;
+  color: #fff;
 }
 
 main {
   font-family: zen loop;
   font-size: 70px;
+  background-color: black;
+}
+
+html {
+  background-color: black;
 }
 
 p {
@@ -111,14 +120,19 @@ footer {
   }
 
   li a {
+    font-family: crimson text;
     text-decoration: none;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 22px;
     align-items: center;
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
     padding-left: 15px;
+  }
+
+  a {
+    color: #ffffff;
   }
 
   .hero_3 {
@@ -142,6 +156,7 @@ footer {
 
   h2 {
     font-size: 70px;
+    background-color: #ecdfcf;
   }
 
   .header {
