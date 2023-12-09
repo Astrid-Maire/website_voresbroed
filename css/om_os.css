@@ -15,11 +15,72 @@ img {
 .hero_3 {
   display: grid;
   place-items: center;
+  background-color: black;
+}
+
+header {
+  font-family: crimson text;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+  background-color: black;
+}
+
+ul li a {
+  font-family: crimson text;
+  font-size: 22px;
+  color: #fff;
+}
+
+main {
+  font-family: zen loop;
+  font-size: 70px;
+  background-color: black;
+}
+
+html {
+  background-color: black;
+}
+
+p {
+  font-family: crimson text;
+  font-size: 30px;
 }
 
 img,
 h1 {
   grid-area: 1 / 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 130px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+.header {
+  background-color: black;
+}
+
+.col1 {
+  background-color: black;
+  color: #ffffff;
+}
+
+.col2 {
+  background-color: #ecdfcf;
+}
+
+.col3 {
+  background-color: #ecdfcf;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
 }
 
 @media (min-width: 800px) {
@@ -59,9 +120,10 @@ h1 {
   }
 
   li a {
+    font-family: crimson text;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 22px;
     align-items: center;
     padding-top: 10px;
     padding-right: 15px;
@@ -69,7 +131,11 @@ h1 {
     padding-left: 15px;
   }
 
-  .container {
+  a {
+    color: #ffffff;
+  }
+
+  .hero_3 {
     display: grid;
     place-items: center;
   }
@@ -81,6 +147,37 @@ h1 {
 
   .hero_3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  h1 {
+    color: #ffffff;
+  }
+
+  h2 {
+    font-size: 70px;
+    background-color: #ecdfcf;
+  }
+
+  .header {
+    background-color: black;
+  }
+
+  .col1 {
+    background-color: black;
+    color: #ffffff;
+  }
+
+  .col2 {
+    background-color: #ecdfcf;
+  }
+
+  .col3 {
+    background-color: #ecdfcf;
+  }
+
+  footer {
+    background-color: black;
+    color: #fff;
   }
 }
