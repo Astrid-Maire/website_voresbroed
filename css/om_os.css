@@ -58,4 +58,14 @@ img {
     padding-bottom: 10px;
     padding-left: 15px;
   }
+
+  .container {
+    display: grid;
+    place-items: center;
+  }
+
+  img,
+  h1 {
+    grid-area: 1 / 1;
+  }
 }
