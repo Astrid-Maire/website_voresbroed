@@ -12,6 +12,16 @@ img {
   display: block;
 }
 
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
@@ -57,5 +67,15 @@ img {
     padding-right: 15px;
     padding-bottom: 10px;
     padding-left: 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 }
