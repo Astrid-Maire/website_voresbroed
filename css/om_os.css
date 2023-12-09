@@ -22,6 +22,27 @@ h1 {
   grid-area: 1 / 1;
 }
 
+h1 {
+  color: #ffffff;
+}
+
+.header {
+  background-color: black;
+}
+
+.col1 {
+  background-color: black;
+  color: #ffffff;
+}
+
+.col2 {
+  background-color: #ecdfcf;
+}
+
+.col3 {
+  background-color: #ecdfcf;
+}
+
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
@@ -69,7 +90,7 @@ h1 {
     padding-left: 15px;
   }
 
-  .container {
+  .hero_3 {
     display: grid;
     place-items: center;
   }
@@ -81,6 +102,28 @@ h1 {
 
   .hero_3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  
+  h1 {
+    color: #ffffff;
+  }
+
+  .header {
+    background-color: black;
+  }
+
+  .col1 {
+    background-color: black;
+    color: #ffffff;
+  }
+
+  .col2 {
+    background-color: #ecdfcf;
+  }
+
+  .col3 {
+    background-color: #ecdfcf;
   }
 }
