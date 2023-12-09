@@ -21,6 +21,7 @@ img {
   color: #fff;
   text-decoration: underline;
 }
+
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
