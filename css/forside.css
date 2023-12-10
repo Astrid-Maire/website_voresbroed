@@ -441,7 +441,7 @@ img {
   }
 
   .ffootermenu {
-    line-height: 40px;
+    line-height: 42px;
   }
 
   .flogo img {
@@ -466,7 +466,7 @@ img {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 20px;
+    margin-left: 27px;
   }
 
   .ffootersome img {
@@ -478,7 +478,7 @@ img {
     display: flex;
     justify-content: center;
     margin-left: 50px;
-    gap: 300px;
+    gap: 280px;
   }
 
   .ffootercopy {
