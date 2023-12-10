@@ -12,24 +12,47 @@ img {
   display: block;
 }
 
+.header {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.li {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
 @media (min-width: 800px) {
-  .burger-menu {
-    display: none;
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  .galleri-section {
+    position: relative;
+  }
+
+  .heru_4 {
+    position: relative;
+    width: 100%;
+  }
+
+  .background-image {
+    width: 100%;
   }
 
   .logo {
-    width: 290px;
-    padding-left: 60px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 
   nav {
@@ -46,11 +69,16 @@ img {
     gap: 30px;
     text-decoration: none;
     justify-content: flex-end;
+    color: black;
+  }
+
+  li {
+    color: white;
   }
 
   li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     align-items: center;
     padding-top: 10px;
@@ -79,15 +107,8 @@ ul {
 }
 
 .Container_2_2 {
-  display: block;
-  width: 30%;
-  height: 10%;
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.Container_2_2 {
   display: flex;
   justify-content: center;
+  width: 30%;
+  height: 20%;
 }
