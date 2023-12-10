@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
@@ -9,25 +10,29 @@
     <link rel="stylesheet" href="style.css">
     <title>Besog os</title>
 </head>
+
 <body>
-    <main>
-        <header>
-            <a class="logo" href="forside.html"> <img src="images/skilt.webp" alt="Logo"></a>
+
+    <header>
+        <div class="fheadermobile">
             <div class="burger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="link" href="forside.html">Forside</a></li>
-                    <li><a class="link" href="udvalg.html">Vores udvalg</a></li>
-                    <li><a class="link" href="om_os.html">Om os</a></li>
-                    <li><a class="link" href="kontakt.html">Besøg os</a></li>
-                    <li><a class="link" href="galleri.html">Galleri</a></li>
-                </ul>
-            </nav>
-        </header>
+            <a class="logo" href="forside.html"> <img src="svg/logo.svg" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="link" href="forside.html">Forside</a></li>
+                <li><a class="link" href="udvalg.html">Vores udvalg</a></li>
+                <li><a class="link" href="om_os.html">Om os</a></li>
+                <li><a class="link" href="kontakt.html">Besøg os</a></li>
+                <li><a class="link" href="galleri.html">Galleri</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section>
             <div class="hero_4">
                 <img src="images/bord.webp" alt="bord">
@@ -61,6 +66,10 @@
             <p>@voresbrød</p>
             <img src="images/bord.webp" alt="bord">
         </div>
+        <button onclick="topFunction()" id="scrollToTopBtn" title="Gå til toppen">
+            <span class="arrow-up"></span>
+        </button>
     </main>
 </body>
+
 </html>

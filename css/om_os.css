@@ -12,7 +12,6 @@ img {
   display: block;
 }
 
-header,
 .hero_3 {
   display: grid;
   place-items: center;
