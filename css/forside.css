@@ -183,4 +183,37 @@ h1 {
   .fctabutton:hover {
     text-decoration: underline;
   }
+
+  .fvalues {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #ecdfcf;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    color: black;
+  }
+
+  .fvalues img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .fvalues h3 {
+    margin-bottom: 50px;
+    font-family: "zen loop";
+    font-size: 55px;
+  }
+
+  .fvalues p {
+    font-family: "crimson text";
+    font-size: 20px;
+    max-width: 500px;
+  }
 }
