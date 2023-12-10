@@ -58,7 +58,8 @@ img {
   }
 
   .logo {
-    width: 290px;
+    width: 180px;
+    object-fit: cover;
     padding-left: 60px;
   }
 
