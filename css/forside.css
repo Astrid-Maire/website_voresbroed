@@ -13,31 +13,31 @@ img {
   display: block;
 }
 
-.link {
-  text-decoration: none;
-  color: #fff;
-}
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
 
-.link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
+  .burger-menu {
+    display: block;
+  }
 
-.fhero {
-  display: grid;
-  place-items: center;
-}
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
 
-img,
-h1 {
-  grid-area: 1 / 1;
-}
+  .fhero {
+    display: grid;
+    place-items: center;
+  }
 
-.fhero h1 {
-  font-family: "zen loop";
-  font-size: 130px;
-  color: white;
-  letter-spacing: 4px;
+  img,
+  h1 {
+    grid-area: 1 / 1;
+  }
 }
 
 @media (min-width: 800px) {
@@ -102,9 +102,26 @@ h1 {
 
   /*MAIN*/
 
+  .fhero {
+    display: grid;
+    place-items: center;
+  }
+
+  img,
+  h1 {
+    grid-area: 1 / 1;
+  }
+
   .fhero img {
     height: 690px;
     object-fit: cover;
+  }
+
+  .fhero h1 {
+    font-family: "zen loop";
+    font-size: 130px;
+    color: white;
+    letter-spacing: 4px;
   }
 
   .fvoreshistorie {
