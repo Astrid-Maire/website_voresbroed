@@ -12,7 +12,127 @@ img {
   display: block;
 }
 
+@media (max-width: 800px) {
+  /*HEADER*/
+
+  header nav {
+    display: none;
+  }
+
+  .fheadermobile {
+    display: flex;
+    gap: 200px;
+  }
+
+  .logo img {
+    width: 70px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    background-color: #130704;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "crimson text";
+  }
+
+  .ffootertop {
+    font-family: "zen loop";
+    font-size: 30px;
+  }
+
+  .ffootermenu {
+    line-height: 30px;
+  }
+
+  .flogo img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer a {
+    text-decoration: none;
+    font-family: "crimson text";
+    font-size: 18px;
+    color: white;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  .ffootersome {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .ffootersome img {
+    width: 50px;
+    object-fit: cover;
+  }
+
+  .ffootercopy {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /*SCROLL TO TOP*/
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .arrow-up {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+}
+
 @media (min-width: 800px) {
+  /*HEADER*/
+
   .burger-menu {
     display: none;
   }
@@ -28,7 +148,8 @@ img {
   }
 
   .logo {
-    width: 290px;
+    width: 180px;
+    object-fit: cover;
     padding-left: 60px;
   }
 
@@ -39,7 +160,7 @@ img {
     padding-right: 50px;
   }
 
-  nav ul {
+  header nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -48,8 +169,9 @@ img {
     justify-content: flex-end;
   }
 
-  li a {
+  header li a {
     text-decoration: none;
+    font-family: "crimson text";
     color: black;
     font-size: 18px;
     align-items: center;
@@ -58,36 +180,101 @@ img {
     padding-bottom: 10px;
     padding-left: 15px;
   }
-}
 
-footer {
-  display: flex;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  justify-content: center;
-}
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
 
-.container_1,
-.Container_2,
-.Container_3 {
-  flex-direction: column;
-}
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 
-ul {
-  display: flex;
-  justify-content: center;
-}
+  /*FOOTER*/
 
-.Container_2_2 {
-  display: block;
-  width: 30%;
-  height: 10%;
-  display: block;
-  padding: 0;
-  margin: 0;
-}
+  footer {
+    background-color: #130704;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "crimson text";
+    font-size: 20px;
+  }
 
-.Container_2_2 {
-  display: flex;
-  justify-content: center;
+  .ffootertop {
+    font-family: "zen loop";
+    font-size: 40px;
+  }
+
+  .ffootermenu {
+    line-height: 42px;
+  }
+
+  .flogo img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer a {
+    text-decoration: none;
+    font-family: "crimson text";
+    color: white;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  .ffootersome {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 27px;
+  }
+
+  .ffootersome img {
+    width: 60px;
+    object-fit: cover;
+  }
+
+  .ffootergrid3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    gap: 280px;
+  }
+
+  .ffootercopy {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  /*SCROLL TO TOP*/
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .arrow-up {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
 }
