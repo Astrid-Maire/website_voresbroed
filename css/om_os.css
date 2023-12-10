@@ -12,14 +12,127 @@ img {
   display: block;
 }
 
+header,
 .hero_3 {
   display: grid;
   place-items: center;
+  background-color: black;
+}
+
+header,
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: crimson text;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 290px;
+  padding-left: 60px;
+  place-items: center;
+}
+
+ul li a {
+  font-family: crimson text;
+  font-size: 22px;
+  color: #fff;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+}
+
+ul,
+img {
+  grid-area: 1 / 1;
+}
+
+main {
+  font-family: zen loop;
+  font-size: 70px;
+  background-color: black;
+}
+
+html {
+  background-color: black;
+}
+
+p {
+  font-family: crimson text;
+  font-size: 20px;
+  margin: 50px;
+  color: black;
 }
 
 img,
 h1 {
   grid-area: 1 / 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 40px;
+  padding-top: 10px;
+  color: black;
+}
+
+.header {
+  background-color: black;
+}
+
+.col1 {
+  background-color: black;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.col2 {
+  background-color: #ecdfcf;
+  padding-top: 40px;
+  color: black;
+}
+
+.col3 {
+  background-color: #ecdfcf;
+  padding-top: 40px;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.img,
+video {
+  padding: 20px;
+  place-items: right;
 }
 
 @media (min-width: 800px) {
@@ -38,7 +151,8 @@ h1 {
   }
 
   .logo {
-    width: 290px;
+    width: 180px;
+    object-fit: cover;
     padding-left: 60px;
   }
 
@@ -59,9 +173,10 @@ h1 {
   }
 
   li a {
+    font-family: crimson text;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 22px;
     align-items: center;
     padding-top: 10px;
     padding-right: 15px;
@@ -69,7 +184,12 @@ h1 {
     padding-left: 15px;
   }
 
-  .container {
+  nav,
+  a {
+    color: #ffffff;
+  }
+
+  .hero_3 {
     display: grid;
     place-items: center;
   }
@@ -81,6 +201,59 @@ h1 {
 
   .hero_3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 130px;
+  }
+
+  h2 {
+    font-size: 70px;
+    text-align: center;
+    color: black;
+  }
+
+  p {
+    font-family: crimson text;
+    font-size: 30px;
+  }
+
+  .header {
+    background-color: black;
+  }
+
+  .col1 {
+    background-color: black;
+    color: #ffffff;
+    padding-top: 80px;
+  }
+
+  .col2 {
+    background-color: #ecdfcf;
+    padding-top: 80px;
+    color: black;
+  }
+
+  .col3 {
+    background-color: #ecdfcf;
+    padding-top: 80px;
+    color: black;
+  }
+
+  footer {
+    background-color: black;
+    color: #fff;
+
+    .link {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 }
