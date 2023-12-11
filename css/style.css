@@ -131,7 +131,6 @@ img {
 }
 
 @media (min-width: 800px) {
- 
 
   .burger-menu {
     display: none;
@@ -277,12 +276,6 @@ img {
   }
 
 
-.Container_2_2 {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  height: 20%;
-}
 
   footer {
     background-color: #130704;
@@ -371,5 +364,6 @@ img {
     padding: 10px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-  }}
+  }
+}
   
