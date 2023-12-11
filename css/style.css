@@ -12,25 +12,55 @@ img {
   display: block;
 }
 
-.header {
-  background-color: black;
-  color: rgb(255, 255, 255);
-}
-
-.li {
-  color: rgb(255, 255, 255);
-  background-color: black;
-}
-
 @media (min-width: 800px) {
-  .menu {
+  .burger-menu {
+    display: none;
+  }
+
+  nav {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+  }
+
+  li a {
+    font-size: 18px;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .header {
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  .li {
+    color: black;
+    background-color: black;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     color: white;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
   }
 
   .galleri-section {
@@ -55,18 +85,10 @@ img {
     z-index: 2;
   }
 
-  nav {
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    padding-right: 50px;
-  }
-
   nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 30px;
     text-decoration: none;
     justify-content: flex-end;
     color: black;
@@ -81,10 +103,15 @@ img {
     color: white;
     font-size: 18px;
     align-items: center;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    justify-content: flex-end;
   }
 }
 

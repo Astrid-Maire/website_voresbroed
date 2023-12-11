@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../04_animation/website"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "website_voresbroed"
+  }
+}
