@@ -87,6 +87,14 @@ video {
   place-items: right;
 }
 
+#overskrift {
+  color: #130704;
+}
+
+#tekst {
+  color: #130704;
+}
+
 /*FOOTER*/
 
 footer {
