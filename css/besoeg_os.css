@@ -13,6 +13,19 @@ main {
   background-color: #ecdfcf;
 }
 
+/* Billede på forside  */
+.container_01 {
+  position: absolute;
+  font-family: "zen loop";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 3;
+  font-size: 5em;
+}
+
 /* Adresse & Åbningstider */
 .info {
   display: grid;
@@ -91,6 +104,7 @@ img {
   padding: 15px;
   font-size: 35px;
 }
+
 /* layoutdiagram-------------------- */
 .hero_5 h2 {
   font-size: 45px;
