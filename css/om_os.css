@@ -114,8 +114,8 @@ footer {
   line-height: 30px;
 }
 
-.ffooterinfo {
-  font-size: 20px;
+#ffooterinfo {
+  font-size: 18px;
 }
 
 .flogo img {
@@ -155,6 +155,10 @@ footer ul {
 .link:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+#ffooterinfo {
+  font-size: 18px;
 }
 
 @media (min-width: 800px) {
@@ -350,10 +354,6 @@ footer ul {
     line-height: 42px;
   }
 
-  .ffooterinfo {
-    font-size: 18px;
-  }
-
   .flogo img {
     width: 120px;
     display: block;
@@ -398,5 +398,9 @@ footer ul {
 
   .footer {
     color: white;
+  }
+
+  #ffooterinfo {
+    font-size: 18px;
   }
 }
