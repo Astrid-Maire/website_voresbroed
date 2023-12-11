@@ -131,7 +131,6 @@ img {
 }
 
 @media (min-width: 800px) {
-
   .burger-menu {
     display: none;
   }
@@ -160,7 +159,6 @@ img {
   }
 
   li a {
-  header nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -180,7 +178,6 @@ img {
     padding-bottom: 10px;
     padding-left: 15px;
   }
-
 
   .link:hover {
     color: #fff;
@@ -262,8 +259,6 @@ img {
   nav ul {
     justify-content: flex-end;
   }
-
-
 
   .link {
     text-decoration: none;
