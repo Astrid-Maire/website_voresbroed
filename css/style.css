@@ -13,8 +13,7 @@ img {
 }
 
 @media (max-width: 800px) {
-  /*HEADER*/
-
+  /* HEADER */
   header nav {
     display: none;
   }
@@ -24,7 +23,7 @@ img {
     gap: 200px;
   }
 
-  .logo img {
+  .logo {
     width: 70px;
     object-fit: cover;
     display: block;
@@ -46,8 +45,7 @@ img {
     margin: 9px 0;
   }
 
-  /*FOOTER*/
-
+  /* FOOTER */
   footer {
     background-color: #130704;
     color: white;
@@ -61,8 +59,11 @@ img {
     font-size: 30px;
   }
 
-  .ffootermenu {
+  .ffootermenu,
+  .ffootercopy {
     line-height: 30px;
+    font-size: 18px;
+    margin-top: 30px;
   }
 
   .flogo img {
@@ -71,23 +72,19 @@ img {
     margin: 0 auto;
   }
 
-  footer a {
-    text-decoration: none;
-    font-family: "crimson text";
-    font-size: 18px;
-    color: white;
-  }
-
+  footer a,
   footer ul {
+    text-decoration: none;
     list-style: none;
+    font-family: "crimson text";
+    color: white;
   }
 
   .ffootersome {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
   }
 
   .ffootersome img {
@@ -95,17 +92,12 @@ img {
     object-fit: cover;
   }
 
-  .ffootercopy {
-    font-size: 10px;
-    margin-top: 30px;
-  }
   .link:hover {
     color: #fff;
     text-decoration: underline;
   }
 
-  /*SCROLL TO TOP*/
-
+  /* SCROLL TO TOP */
   #scrollToTopBtn {
     display: none;
     position: fixed;
@@ -141,8 +133,7 @@ img {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
   }
 
   .logo {
@@ -153,12 +144,13 @@ img {
 
   nav {
     display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin: 30px 0 50px;
     padding-right: 50px;
   }
 
+  header li a,
   li a {
+<<<<<<< HEAD
     header nav ul {
       display: flex;
       flex-direction: row;
@@ -367,4 +359,65 @@ img {
       -webkit-transform: rotate(-135deg);
     }
   }
+=======
+    text-decoration: none;
+    font-family: "crimson text";
+    color: black;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .header,
+  .li,
+  .galleri-section,
+  .heru_4,
+  .background-image {
+    position: relative;
+  }
+
+  .container_01,
+  .menu {
+    position: absolute;
+  }
+
+  .logo {
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  nav ul,
+  .menu,
+  .ffootergrid3 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    color: black;
+  }
+
+  li,
+  .link {
+    color: white;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .ffootergrid3 {
+    gap: 280px;
+  }
+>>>>>>> d1b1d05e61d564f56f98a18c23e6245558749946
 }
