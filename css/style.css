@@ -12,6 +12,10 @@ img {
   display: block;
 }
 
+h1 {
+  font: 14px;
+}
+
 @media (max-width: 800px) {
   /*HEADER*/
 
