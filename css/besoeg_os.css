@@ -14,15 +14,15 @@ main {
 }
 
 /* Første billede */
-.hero_4 {
+.hero_5 {
   position: relative;
   text-align: center;
   color: white;
 }
-.hero_4 img {
+.hero_5 img {
   height: 680px;
 }
-.hero_4 h2 {
+.hero_5 h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,53 +30,69 @@ main {
   font-size: 30px;
 }
 
-/* Adresser */
-.adresser {
+/* Adresse & Åbningstider */
+.info {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
   background-color: #28524b;
-  color: white;
+}
+
+.info img {
+  margin: 5px;
+  padding: 20px;
+}
+
+.adresser {
   text-align: center;
 }
-.adresser h2 {
-  padding: 17px;
+
+.info h2 {
+  font-size: 40px;
+  padding: 20px;
 }
-.adresser p {
-  padding: 5px;
+
+/* Adresser */
+.adresser {
+  color: white;
+  display: grid;
+  place-content: center;
 }
 
 /* åbningstider */
 .aabningstider {
-  background-color: #28524b;
   color: white;
   text-align: center;
-}
-.aabningstider img {
-  margin: 5px;
-  padding: 20px;
-}
-.aabningstider h2 {
-  padding: 17px;
-}
-.aabningstider p {
-  padding: 5px;
-}
+  display: grid;
+  place-content: center;
+} /*
+
 
 /* sociale medier */
 .socialemedier {
   text-align: center;
   margin-top: 20px;
 }
+.socialemedier p,
+img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .socialemedier p {
   margin-left: 100px;
   padding: 10px;
-}
-.socialemedier img {
-  margin: 5px;
-  padding: 17px;
-  order: -1;
+  grid-column: 2/1;
 }
 .socialemedier h2 {
   padding: 20px;
   font-size: 35px;
+}
+.SoMe_img {
+  margin: 5px;
+  padding: 17px;
+}
+.socialemedier img {
+  width: 30px;
+  bottom: -100px;
 }
 
 /* Besøg os */
@@ -91,4 +107,87 @@ main {
 .besoeg_os h2 {
   padding: 15px;
   font-size: 35px;
+}
+/* layoutdiagram-------------------- */
+.hero_5 h2 {
+  font-size: 45px;
+  background-size: cover;
+}
+
+/* ------------------------------------------------ */
+/* Besøg os */
+@media (min-width: 800px) {
+  .besoeg_os {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    order: 1;
+  }
+  .besoeg_os p {
+    display: grid;
+    grid-column: 2/1;
+  }
+  .besoeg_os img {
+    margin-top: -50px;
+  }
+}
+
+/* ------------------------------------------------ */
+/* Adresser & åbningstider */
+@media (min-width: 800px) {
+  .info {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 800px) {
+  .info img {
+    order: -1;
+    padding: 80px;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 800px) {
+  .adresser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .adresser p {
+    display: grid;
+    grid-column: 2/2;
+  }
+  .adresser h2 {
+    display: grid;
+    grid-column: 2/2;
+  }
+}
+/* ------------------------------------------------ */
+/* Sociale medier */
+@media (min-width: 800px) {
+  .socialemedier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .socialemedier h2 {
+    display: grid;
+    grid-column: 1/1;
+    margin-top: 0px;
+  }
+  .socialemedier p {
+    display: grid;
+    grid-column: 1/1;
+  }
+  .socialemedier img {
+    display: grid;
+    grid-column: 2/2;
+    margin-top: 50px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
 }
