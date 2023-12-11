@@ -217,7 +217,7 @@ img {
     position: relative;
   }
 
-  .heru_4 {
+  .heru {
     position: relative;
     width: 100%;
   }
@@ -371,5 +371,5 @@ img {
     padding: 10px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-  }}
+  }
   
