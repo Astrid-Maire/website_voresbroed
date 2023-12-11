@@ -12,6 +12,8 @@ img {
   display: block;
 }
 
+/*MAX 800*/
+
 .hero_3 {
   display: grid;
   place-items: center;
@@ -107,11 +109,11 @@ header nav {
 }
 
 .logo img {
-  width: 70px;
+  width: 116px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -255,6 +257,8 @@ footer ul {
     text-decoration: underline;
   }
 
+  /*MAIN*/
+
   .hero_3 {
     display: grid;
     place-items: center;
@@ -300,6 +304,8 @@ footer ul {
     font-family: "crimson text";
     font-size: 20px;
   }
+
+  /*GRID*/
 
   .col1 {
     display: grid;
