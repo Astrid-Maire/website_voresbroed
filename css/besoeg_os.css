@@ -1,94 +1,94 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  main {
-    background-color: #ecdfcf;
-  }
-  
-  /* Første billede */
-  .hero_4 {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  .hero_4 img {
-    height: 680px;
-  }
-  .hero_4 h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-  }
-  
-  /* Adresser */
-  .adresser {
-    background-color: #28524b;
-    color: white;
-    text-align: center;
-  }
-  .adresser h2 {
-    padding: 17px;
-  }
-  .adresser p {
-    padding: 5px;
-  }
-  
-  /* åbningstider */
-  .aabningstider {
-    background-color: #28524b;
-    color: white;
-    text-align: center;
-  }
-  .aabningstider img {
-    margin: 5px;
-    padding: 20px;
-  }
-  .aabningstider h2 {
-    padding: 17px;
-  }
-  .aabningstider p {
-    padding: 5px;
-  }
-  
-  /* sociale medier */
-  .socialemedier {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .socialemedier p {
-    margin-left: 100px;
-    padding: 10px;
-  }
-  .socialemedier img {
-    margin: 5px;
-    padding: 17px;
-    order: -1;
-  }
-  .socialemedier h2 {
-    padding: 20px;
-    font-size: 35px;
-  }
-  
-  /* Besøg os */
-  .besoeg_os {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .besoeg_os img {
-    margin: 5px;
-    padding: 20px;
-  }
-  .besoeg_os h2 {
-    padding: 15px;
-    font-size: 35px;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main {
+  background-color: #ecdfcf;
+}
+
+/* Første billede */
+.hero_4 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero_4 img {
+  height: 680px;
+}
+.hero_4 h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+/* Adresser */
+.adresser {
+  background-color: #28524b;
+  color: white;
+  text-align: center;
+}
+.adresser h2 {
+  padding: 17px;
+}
+.adresser p {
+  padding: 5px;
+}
+
+/* åbningstider */
+.aabningstider {
+  background-color: #28524b;
+  color: white;
+  text-align: center;
+}
+.aabningstider img {
+  margin: 5px;
+  padding: 20px;
+}
+.aabningstider h2 {
+  padding: 17px;
+}
+.aabningstider p {
+  padding: 5px;
+}
+
+/* sociale medier */
+.socialemedier {
+  text-align: center;
+  margin-top: 20px;
+}
+.socialemedier p {
+  margin-left: 100px;
+  padding: 10px;
+}
+.socialemedier img {
+  margin: 5px;
+  padding: 17px;
+  order: -1;
+}
+.socialemedier h2 {
+  padding: 20px;
+  font-size: 35px;
+}
+
+/* Besøg os */
+.besoeg_os {
+  text-align: center;
+  margin-top: 20px;
+}
+.besoeg_os img {
+  margin: 5px;
+  padding: 20px;
+}
+.besoeg_os h2 {
+  padding: 15px;
+  font-size: 35px;
+}
