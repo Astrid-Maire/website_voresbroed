@@ -77,6 +77,39 @@ video {
 }
 
 @media (min-width: 800px) {
+  /*HEADER*/
+
+  header nav {
+    display: none;
+  }
+
+  .fheadermobile {
+    display: flex;
+    gap: 200px;
+  }
+
+  .logo img {
+    width: 70px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+  }
+
   .hero_3 {
     display: grid;
     place-items: center;
