@@ -115,6 +115,18 @@ window.addEventListener("load", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.querySelector(".burger-menu");
+  const nav = document.querySelector("header nav");
+
+  burgerMenu.addEventListener("click", function () {
+    nav.style.display =
+      nav.style.display === "none" || nav.style.display === ""
+        ? "block"
+        : "none";
+  });
+});
+
 // Show the button when scrolling down
 window.onscroll = function () {
   scrollFunction();
