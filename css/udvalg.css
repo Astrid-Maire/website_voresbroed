@@ -4,6 +4,13 @@
 
 body {
   margin: 0;
+  background-color: #130704;
+}
+
+h1,
+h2,
+p {
+  color: white;
 }
 
 img {
@@ -61,7 +68,7 @@ img {
 
   li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     align-items: center;
     padding-top: 10px;
@@ -78,5 +85,28 @@ img {
   .link:hover {
     color: #fff;
     text-decoration: underline;
+  }
+
+  /* Main */
+  .forsidebillede {
+    display: grid;
+    place-items: center;
+  }
+
+  img,
+  h1 {
+    grid-area: 1 / 1;
+  }
+
+  .forsidebillede h1 {
+    font-family: "zen loop";
+    font-size: 80px;
+    color: white;
+    letter-spacing: 4px;
+  }
+
+  .forsidebillede img {
+    width: 1400px;
+    object-fit: cover;
   }
 }

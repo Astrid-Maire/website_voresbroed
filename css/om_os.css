@@ -12,44 +12,10 @@ img {
   display: block;
 }
 
-header,
 .hero_3 {
   display: grid;
   place-items: center;
-  background-color: black;
-}
-
-header,
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: crimson text;
-  font-weight: bold;
-  font-size: 22px;
-  color: #fff;
-  background-color: black;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.logo {
-  width: 290px;
-  padding-left: 60px;
-  place-items: center;
-}
-
-ul li a {
-  font-family: crimson text;
-  font-size: 22px;
-  color: #fff;
-}
-
-.logo {
-  display: grid;
-  place-items: center;
+  background-color: #130704;
 }
 
 ul,
@@ -60,18 +26,17 @@ img {
 main {
   font-family: zen loop;
   font-size: 70px;
-  background-color: black;
+  background-color: #130704;
 }
 
 html {
-  background-color: black;
+  background-color: #130704;
 }
 
 p {
-  font-family: crimson text;
+  font-family: "crimson text";
   font-size: 20px;
   margin: 50px;
-  color: black;
 }
 
 img,
@@ -89,15 +54,11 @@ h2 {
   text-align: center;
   margin: 40px;
   padding-top: 10px;
-  color: black;
-}
-
-.header {
-  background-color: black;
+  color: #130704;
 }
 
 .col1 {
-  background-color: black;
+  background-color: #130704;
   color: #ffffff;
   padding-top: 40px;
 }
@@ -105,28 +66,13 @@ h2 {
 .col2 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: black;
+  color: #130704;
 }
 
 .col3 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: black;
-}
-
-footer {
-  background-color: black;
-  color: #fff;
-}
-
-.link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.link:hover {
-  color: #fff;
-  text-decoration: underline;
+  color: #130704;
 }
 
 .img,
@@ -136,59 +82,6 @@ video {
 }
 
 @media (min-width: 800px) {
-  .burger-menu {
-    display: none;
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .logo {
-    width: 180px;
-    object-fit: cover;
-    padding-left: 60px;
-  }
-
-  nav {
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    padding-right: 50px;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 30px;
-    text-decoration: none;
-    justify-content: flex-end;
-  }
-
-  li a {
-    font-family: crimson text;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 22px;
-    align-items: center;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-  }
-
-  nav,
-  a {
-    color: #ffffff;
-  }
-
   .hero_3 {
     display: grid;
     place-items: center;
@@ -212,20 +105,16 @@ video {
   h2 {
     font-size: 70px;
     text-align: center;
-    color: black;
+    color: #130704;
   }
 
   p {
-    font-family: crimson text;
-    font-size: 30px;
-  }
-
-  .header {
-    background-color: black;
+    font-family: "crimson text";
+    font-size: 20px;
   }
 
   .col1 {
-    background-color: black;
+    background-color: #130704;
     color: #ffffff;
     padding-top: 80px;
   }
@@ -233,27 +122,84 @@ video {
   .col2 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: black;
+    color: #130704;
   }
 
   .col3 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: black;
+    color: #130704;
   }
 
+  /*FOOTER*/
+
   footer {
-    background-color: black;
-    color: #fff;
+    background-color: #130704;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "crimson text";
+    font-size: 20px;
+  }
 
-    .link {
-      text-decoration: none;
-      color: #fff;
-    }
+  .ffootertop {
+    font-family: "zen loop";
+    font-size: 40px;
+  }
 
-    .link:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
+  .ffootermenu {
+    line-height: 42px;
+    background-color: #130704;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "crimson text";
+    font-size: 20px;
+  }
+
+  .flogo img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer a {
+    text-decoration: none;
+    font-family: "crimson text";
+    color: white;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  .ffootersome {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 27px;
+  }
+
+  .ffootersome img {
+    width: 60px;
+    object-fit: cover;
+  }
+
+  .ffootergrid3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    gap: 280px;
+  }
+
+  .ffootercopy {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .footer {
+    color: white;
   }
 }
