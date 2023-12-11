@@ -12,6 +12,8 @@ img {
   display: block;
 }
 
+/*MAX 800*/
+
 .hero_3 {
   display: grid;
   place-items: center;
@@ -95,6 +97,39 @@ video {
   color: #130704;
 }
 
+/*HEADER*/
+
+header nav {
+  display: none;
+}
+
+.fheadermobile {
+  display: flex;
+  gap: 200px;
+}
+
+.logo img {
+  width: 116px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.burger-menu {
+  display: block;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 9px 0;
+}
+
 /*FOOTER*/
 
 footer {
@@ -112,6 +147,10 @@ footer {
 
 .ffootermenu {
   line-height: 30px;
+}
+
+#ffooterinfo {
+  font-size: 18px;
 }
 
 .flogo img {
@@ -151,6 +190,10 @@ footer ul {
 .link:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+#ffooterinfo {
+  font-size: 18px;
 }
 
 @media (min-width: 800px) {
@@ -214,6 +257,8 @@ footer ul {
     text-decoration: underline;
   }
 
+  /*MAIN*/
+
   .hero_3 {
     display: grid;
     place-items: center;
@@ -259,6 +304,8 @@ footer ul {
     font-family: "crimson text";
     font-size: 20px;
   }
+
+  /*GRID*/
 
   .col1 {
     display: grid;
@@ -310,7 +357,7 @@ footer ul {
 
   .col_3-1,
   p {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .col_3-2,
@@ -390,5 +437,9 @@ footer ul {
 
   .footer {
     color: white;
+  }
+
+  #ffooterinfo {
+    font-size: 18px;
   }
 }

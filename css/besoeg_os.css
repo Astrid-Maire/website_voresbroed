@@ -13,23 +13,6 @@ main {
   background-color: #ecdfcf;
 }
 
-/* Første billede */
-.hero_5 {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.hero_5 img {
-  height: 680px;
-}
-.hero_5 h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-}
-
 /* Adresse & Åbningstider */
 .info {
   display: grid;
@@ -183,11 +166,4 @@ img {
     grid-column: 2/2;
     margin-top: 50px;
   }
-}
-
-ul {
-  list-style-type: none;
-}
-
-footer {
 }
