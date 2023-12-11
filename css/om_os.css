@@ -150,6 +150,12 @@ video {
 
   .ffootermenu {
     line-height: 42px;
+    background-color: #130704;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "crimson text";
+    font-size: 20px;
   }
 
   .flogo img {
