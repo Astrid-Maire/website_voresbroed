@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Login extends HTMLElement {
   constructor() {
     super();
@@ -115,7 +114,7 @@ window.addEventListener("load", () => {
     document.body.prepend(div);
   }
 });
-=======
+
 // Show the button when scrolling down
 window.onscroll = function () {
   scrollFunction();
@@ -136,4 +135,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
->>>>>>> c0554dd0edea488b14c80532e347b6df9f275805
