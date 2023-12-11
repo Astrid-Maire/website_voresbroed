@@ -87,6 +87,14 @@ video {
   place-items: right;
 }
 
+#overskrift {
+  color: #130704;
+}
+
+#tekst {
+  color: #130704;
+}
+
 /*FOOTER*/
 
 footer {
@@ -104,6 +112,10 @@ footer {
 
 .ffootermenu {
   line-height: 30px;
+}
+
+.ffooterinfo {
+  font-size: 20px;
 }
 
 .flogo img {
@@ -302,7 +314,7 @@ footer ul {
 
   .col_3-1,
   p {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .col_3-2,
@@ -336,6 +348,10 @@ footer ul {
 
   .ffootermenu {
     line-height: 42px;
+  }
+
+  .ffooterinfo {
+    font-size: 18px;
   }
 
   .flogo img {
