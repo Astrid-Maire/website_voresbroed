@@ -15,7 +15,7 @@ img {
 .hero_3 {
   display: grid;
   place-items: center;
-  background-color: black;
+  background-color: #130704;
 }
 
 ul,
@@ -26,11 +26,11 @@ img {
 main {
   font-family: zen loop;
   font-size: 70px;
-  background-color: black;
+  background-color: #130704;
 }
 
 html {
-  background-color: black;
+  background-color: #130704;
 }
 
 p {
@@ -54,11 +54,11 @@ h2 {
   text-align: center;
   margin: 40px;
   padding-top: 10px;
-  color: black;
+  color: #130704;
 }
 
 .col1 {
-  background-color: black;
+  background-color: #130704;
   color: #ffffff;
   padding-top: 40px;
 }
@@ -66,13 +66,13 @@ h2 {
 .col2 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: black;
+  color: #130704;
 }
 
 .col3 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: black;
+  color: #130704;
 }
 
 .img,
@@ -105,7 +105,7 @@ video {
   h2 {
     font-size: 70px;
     text-align: center;
-    color: black;
+    color: #130704;
   }
 
   p {
@@ -114,7 +114,7 @@ video {
   }
 
   .col1 {
-    background-color: black;
+    background-color: #130704;
     color: #ffffff;
     padding-top: 80px;
   }
@@ -122,13 +122,13 @@ video {
   .col2 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: black;
+    color: #130704;
   }
 
   .col3 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: black;
+    color: #130704;
   }
 
   /*FOOTER*/
