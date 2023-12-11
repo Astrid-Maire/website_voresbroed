@@ -45,7 +45,6 @@ h1 {
 }
 
 h1 {
-  color: #ffffff;
   font-size: 70px;
 }
 
@@ -54,25 +53,21 @@ h2 {
   text-align: center;
   margin: 40px;
   padding-top: 10px;
-  color: #130704;
 }
 
 .col1 {
   background-color: #130704;
-  color: #ffffff;
   padding-top: 40px;
 }
 
 .col2 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: #130704;
 }
 
 .col3 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: #130704;
 }
 
 .img,
@@ -82,6 +77,66 @@ video {
 }
 
 @media (min-width: 800px) {
+  /*HEADER*/
+
+  .burger-menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 180px;
+    object-fit: cover;
+    padding-left: 60px;
+  }
+
+  nav {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+    justify-content: flex-end;
+  }
+
+  header li a {
+    text-decoration: none;
+    font-family: "crimson text";
+    color: black;
+    font-size: 18px;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
   .hero_3 {
     display: grid;
     place-items: center;
@@ -98,37 +153,32 @@ video {
   }
 
   h1 {
-    color: #ffffff;
     font-size: 130px;
   }
 
   h2 {
     font-size: 70px;
     text-align: center;
-    color: #130704;
-  }
-
-  p {
-    font-family: "crimson text";
-    font-size: 20px;
   }
 
   .col1 {
     background-color: #130704;
-    color: #ffffff;
     padding-top: 80px;
   }
 
   .col2 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: #130704;
   }
 
   .col3 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: #130704;
+  }
+
+  p {
+    font-family: "crimson text";
+    font-size: 20px;
   }
 
   /*FOOTER*/
