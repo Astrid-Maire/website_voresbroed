@@ -115,6 +115,13 @@ window.addEventListener("load", () => {
   }
 });
 
+//burgermenu
+burgerMenu.addEventListener("click", function () {
+  console.log("Burger menu clicked!");
+  nav.style.display =
+    nav.style.display === "none" || nav.style.display === "" ? "block" : "none";
+});
+
 // Show the button when scrolling down
 window.onscroll = function () {
   scrollFunction();
