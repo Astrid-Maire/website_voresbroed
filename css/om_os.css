@@ -45,7 +45,6 @@ h1 {
 }
 
 h1 {
-  color: #ffffff;
   font-size: 70px;
 }
 
@@ -54,25 +53,21 @@ h2 {
   text-align: center;
   margin: 40px;
   padding-top: 10px;
-  color: #130704;
 }
 
 .col1 {
   background-color: #130704;
-  color: #ffffff;
   padding-top: 40px;
 }
 
 .col2 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: #130704;
 }
 
 .col3 {
   background-color: #ecdfcf;
   padding-top: 40px;
-  color: #130704;
 }
 
 .img,
@@ -98,37 +93,32 @@ video {
   }
 
   h1 {
-    color: #ffffff;
     font-size: 130px;
   }
 
   h2 {
     font-size: 70px;
     text-align: center;
-    color: #130704;
-  }
-
-  p {
-    font-family: "crimson text";
-    font-size: 20px;
   }
 
   .col1 {
     background-color: #130704;
-    color: #ffffff;
     padding-top: 80px;
   }
 
   .col2 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: #130704;
   }
 
   .col3 {
     background-color: #ecdfcf;
     padding-top: 80px;
-    color: #130704;
+  }
+
+  p {
+    font-family: "crimson text";
+    font-size: 20px;
   }
 
   /*FOOTER*/
