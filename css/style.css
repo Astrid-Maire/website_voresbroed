@@ -345,6 +345,18 @@ h1 {
     font-size: 5em;
   }
 
+  .container_01 {
+    position: absolute;
+    font-family: "zen loop";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 3;
+    font-size: 5em;
+  }
+
   nav ul {
     display: flex;
     flex-direction: row;
