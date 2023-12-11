@@ -37,7 +37,6 @@ p {
   font-family: "crimson text";
   font-size: 20px;
   margin: 50px;
-  color: black;
 }
 
 img,
@@ -111,7 +110,7 @@ video {
 
   p {
     font-family: "crimson text";
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .col1 {
