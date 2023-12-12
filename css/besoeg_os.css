@@ -109,6 +109,9 @@ body {
 .foelg_os_links_txt {
   padding: 10px;
 }
+.foelg_os_links a {
+  text-decoration: none;
+}
 .foelg_os_links img {
   grid-column: 1/1;
   margin-top: 30px;
@@ -165,12 +168,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     order: 1;
+    margin-bottom: 20px;
   }
   .besoeg_os p {
     display: grid;
     grid-column: 2/1;
   }
   .besoeg_os img {
+    width: 572px;
+    height: 480px;
+    margin-left: 94px;
   }
   .besoeg_os_txt {
     margin-top: 125px;
@@ -273,5 +280,12 @@ body {
 @media (min-width: 800px) {
   .foelg_os_links_pic {
     margin-left: 233px;
+  }
+
+  .foelg_os_pic img {
+    margin-left: 90px;
+    height: 420px;
+    width: 500px;
+    object-fit: cover;
   }
 }
