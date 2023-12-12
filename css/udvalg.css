@@ -138,7 +138,7 @@ main {
   .overskrift_u img,
   .overskrift_u h1 {
     grid-area: 1/1;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   .overskrift_u img {
@@ -165,10 +165,11 @@ main {
   .udvalg_tekst {
     background-color: #130704;
     text-align: center;
-    padding-left: 100px;
+    /* padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; */
+    padding: 150px;
   }
 
   .udvalg_tekst p {
@@ -178,8 +179,10 @@ main {
   .udvalg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 20px;
-    padding: 50px;
+    gap: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
     margin-bottom: 100px;
     text-align: center;
   }
@@ -188,6 +191,12 @@ main {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+
+  .udvalg p {
+    font-family: "zen loop";
+    font-weight: bolder;
+    font-size: 25px;
   }
 
   /*********** FOOTER *************/
