@@ -45,16 +45,46 @@ main {
 
   .udvalg {
     display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .udvalg_elementer {
+    display: grid;
+    grid-template-rows: min-content;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .udvalg_elementer > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  /* .wienerbroed {
+    display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     gap: 20px;
     padding-left: 50px;
-    padding-right: 50px;
-    /* padding-top: 10px; */
-    margin-bottom: 100px;
+    padding-right: 50px; */
+  /* padding-top: 10px; */
+  /* margin-bottom: 100px;
     text-align: center;
+  } */
+
+  .wienerbroed {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-  .udvalg img {
+  .wienerbroed img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -243,14 +273,6 @@ main {
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-
-    /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    margin-bottom: 100px;
-    text-align: center; */
   }
 
   .udvalg_elementer {
@@ -263,6 +285,22 @@ main {
   }
 
   .udvalg_elementer > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .wienerbroed {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    /* gap: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .wienerbroed > img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -281,7 +319,7 @@ main {
   }
   .og_meget_mere a,
   .og_meget_mere p {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     padding-bottom: 50px;
   }
