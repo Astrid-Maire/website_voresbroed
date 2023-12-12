@@ -278,4 +278,11 @@ body {
   .foelg_os_links_pic {
     margin-left: 233px;
   }
+
+  .foelg_os_pic img {
+    margin-left: 90px;
+    height: 420px;
+    width: 500px;
+    object-fit: cover;
+  }
 }
