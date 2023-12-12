@@ -16,6 +16,45 @@ img {
 @media (max-width: 800px) {
   /*HEADER*/
 
+  header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .header-content h1 {
+    font-family: "zen loop";
+    font-size: 60px;
+    color: white;
+    letter-spacing: 4px;
+    margin-top: 600px;
+  }
+
   header nav {
     display: none;
   }
@@ -123,7 +162,7 @@ img {
   }
 
   .fhero img {
-    height: 690px;
+    height: 500px;
     object-fit: cover;
   }
 
@@ -161,13 +200,42 @@ img {
   }
 
   header {
+    position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 10px;
     margin-bottom: 30px;
-    background-color: #130704;
+    position: relative;
+    z-index: 1;
+  }
+
+  header .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .header-content h1 {
+    font-family: "zen loop";
+    font-size: 130px;
+    color: white;
+    letter-spacing: 4px;
+    margin-top: 600px;
   }
 
   .hlogo {
@@ -228,7 +296,7 @@ img {
   }
 
   .fhero img {
-    height: 690px;
+    height: 490px;
     object-fit: cover;
   }
 
