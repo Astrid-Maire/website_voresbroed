@@ -181,6 +181,10 @@ img {
     padding-left: 15px;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9361cf11ee63110c8de1fcf1bedb8617e00614aa
   .menu {
     width: 100%;
     display: flex;
@@ -206,6 +210,15 @@ img {
     width: 100%;
   }
 
+<<<<<<< HEAD
+=======
+  .logo {
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+  }
+
+>>>>>>> 9361cf11ee63110c8de1fcf1bedb8617e00614aa
   .container_01 {
     position: absolute;
     font-family: "zen loop";
@@ -234,6 +247,22 @@ img {
     position: relative;
   }
 
+<<<<<<< HEAD
+=======
+
+  .heru_4 {
+
+  .fheadermobile {
+    position: relative;
+  }
+
+  .heru {
+
+    position: relative;
+    width: 100%;
+  }
+
+>>>>>>> 9361cf11ee63110c8de1fcf1bedb8617e00614aa
   .background-image {
     width: 100%;
   }

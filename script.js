@@ -137,8 +137,15 @@ window.addEventListener("load", () => {
   }
 });
 
+//galleri
+
 //burgermenu
+<<<<<<< HEAD
 burgerMenu.addEventListener("click", function () {
   console.log("Burger menu clicked!");
   nav.style.display = nav.style.display === "none" || nav.style.display === "" ? "block" : "none";
+=======
+document.getElementById("burger-icon").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
+>>>>>>> 9361cf11ee63110c8de1fcf1bedb8617e00614aa
 });
