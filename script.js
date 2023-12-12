@@ -1,3 +1,24 @@
+// Show the button when scrolling down
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// Scroll to the top when the button is clicked
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
 class Login extends HTMLElement {
   constructor() {
     super();
@@ -5,6 +26,7 @@ class Login extends HTMLElement {
       mode: "open",
     }); //apparently slots only work with the shadow dom?
   }
+
   connectedCallback() {
     this.html = `<style>
         /****** LOGIN MODAL ******/
@@ -118,27 +140,5 @@ window.addEventListener("load", () => {
 //burgermenu
 burgerMenu.addEventListener("click", function () {
   console.log("Burger menu clicked!");
-  nav.style.display =
-    nav.style.display === "none" || nav.style.display === "" ? "block" : "none";
+  nav.style.display = nav.style.display === "none" || nav.style.display === "" ? "block" : "none";
 });
-
-// Show the button when scrolling down
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-}
-
-// Scroll to the top when the button is clicked
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-}

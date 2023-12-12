@@ -12,10 +12,6 @@ img {
   display: block;
 }
 
-h1 {
-  font: 14px;
-}
-
 @media (max-width: 800px) {
   /*HEADER*/
 
@@ -153,6 +149,8 @@ h1 {
     width: 180px;
     object-fit: cover;
     padding-left: 60px;
+    height: auto;
+    position: absolute;
   }
 
   nav {
@@ -183,7 +181,6 @@ h1 {
     padding-left: 15px;
   }
 
-<<<<<<< HEAD
   .menu {
     width: 100%;
     display: flex;
@@ -209,11 +206,6 @@ h1 {
     width: 100%;
   }
 
-  .logo {
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-=======
   .container_01 {
     position: absolute;
     font-family: "zen loop";
@@ -227,7 +219,6 @@ h1 {
   }
 
   .menu {
->>>>>>> 5ce05f1ff56af65078ae5e5cf1669ed39560bcba
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -241,19 +232,6 @@ h1 {
 
   .galleri-section {
     position: relative;
-  }
-
-<<<<<<< HEAD
-  .heru_4 {
-=======
-  .fheadermobile {
-    position: relative;
-  }
-
-  .heru {
->>>>>>> 5ce05f1ff56af65078ae5e5cf1669ed39560bcba
-    position: relative;
-    width: 100%;
   }
 
   .background-image {
