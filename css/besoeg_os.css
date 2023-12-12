@@ -165,12 +165,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     order: 1;
+    margin-bottom: 20px;
   }
   .besoeg_os p {
     display: grid;
     grid-column: 2/1;
   }
   .besoeg_os img {
+    width: 572px;
+    height: 480px;
+    margin-left: 94px;
   }
   .besoeg_os_txt {
     margin-top: 125px;
