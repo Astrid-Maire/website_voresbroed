@@ -447,4 +447,13 @@ footer ul {
   #ffooterinfo {
     font-size: 18px;
   }
+
+  /*VIDEO*/
+
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
