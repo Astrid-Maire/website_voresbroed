@@ -7,6 +7,25 @@ header {
   height: auto;
 }
 
+main {
+  margin: 20px 20px 20px;
+  line-height: 190%;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  display: list-item;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .logo {
     position: absolute;
@@ -15,46 +34,16 @@ header {
     transform: translateX(-50%);
     z-index: 1;
   }
-}
 
-@media (min-width: 800px) {
-  .logo {
+  h1 {
     position: absolute;
-    top: 20px;
-    left: 10%;
-    transform: translateX(-50%);
-    z-index: 1;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
   }
-}
 
-.menu {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  display: flex; /* Gør menuen vandret */
-  flex-direction: row; /* Indstil retningen til vandret */
-  align-items: center; /* Centrer indholdet vandret */
-}
-
-.menu a {
-  display: block;
-  margin: 0 20px; /* Tilføj mellemrum mellem menuelementer */
-  text-decoration: none;
-  color: #000000;
-}
-
-.menu.active {
-  display: flex;
-}
-
-@media (max-width: 800px) {
   nav {
     justify-content: space-between;
   }
@@ -75,12 +64,53 @@ header {
   }
 }
 
-.background-image {
-  width: 100%;
-  height: auto;
-}
+@media (min-width: 800px) {
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
 
-main {
-  margin: 20px 20px 20px;
-  line-height: 190%;
+  header nav ul {
+    display: flex;
+    list-style: none; /* Fjern punkterne her */
+    padding: 0; /* Tilføj denne linje */
+    margin: 0; /* Tilføj denne linje */
+    gap: 30px;
+    text-decoration: none;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: 10;
+    align-items: center;
+    font-family: "crimson text";
+    border-radius: 10px;
+    font-size: 150%;
+  }
+
+  .menu a {
+    display: block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 2;
+    color: white;
+    font-size: 150px;
+  }
 }
