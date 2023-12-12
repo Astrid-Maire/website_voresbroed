@@ -24,16 +24,16 @@ img {
 
   .fheadermobile {
     display: flex;
-    gap: 200px;
+    gap: 170px;
   }
 
-  .logo img {
+  .hlogo img {
     width: 70px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .burger-menu {
@@ -277,22 +277,23 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 40px;
     padding-right: 10px;
-    margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #130704;
   }
 
-  .logo {
+  .hlogo {
     width: 180px;
     object-fit: cover;
-    padding-left: 60px;
+    padding-left: 70px;
   }
 
   nav {
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 50px;
+    margin-top: 60px;
     padding-right: 50px;
   }
 
