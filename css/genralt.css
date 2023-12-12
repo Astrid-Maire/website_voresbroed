@@ -1,4 +1,4 @@
-header {
+.header {
   position: relative;
 }
 
@@ -7,6 +7,22 @@ header {
   height: auto;
 }
 
+main {
+  margin: 20px 20px 20px;
+  line-height: 190%;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Mobile View */
 @media (max-width: 800px) {
   .logo {
     position: absolute;
@@ -14,54 +30,35 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    width: 70px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
-}
 
-@media (min-width: 800px) {
-  .logo {
+  h1 {
     position: absolute;
-    top: 20px;
-    left: 10%;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  display: flex; /* Gør menuen vandret */
-  flex-direction: row; /* Indstil retningen til vandret */
-  align-items: center; /* Centrer indholdet vandret */
-}
-
-.menu a {
-  display: block;
-  margin: 0 20px; /* Tilføj mellemrum mellem menuelementer */
-  text-decoration: none;
-  color: #000000;
-}
-
-.menu.active {
-  display: flex;
-}
-
-@media (max-width: 800px) {
-  nav {
-    justify-content: space-between;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
   }
 
   .burger-menu {
     position: relative;
-    display: flex;
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
   }
 
   .menu {
@@ -73,14 +70,87 @@ header {
     padding: 10px;
     flex-direction: column;
   }
+
+  header nav {
+    display: none;
+  }
 }
 
-.background-image {
-  width: 100%;
-  height: auto;
-}
+/* Desktop View */
+@media (min-width: 800px) {
+  .burger-menu {
+    display: none;
+  }
 
-main {
-  margin: 20px 20px 20px;
-  line-height: 190%;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 2;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 150px;
+  }
+
+  nav {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+  }
+
+  header nav ul,
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+    justify-content: flex-end;
+    color: white;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 3; /* Ensure the menu is above the image */
+  }
+
+  header li a,
+  li a {
+    text-decoration: none;
+    font-family: "crimson text";
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 }

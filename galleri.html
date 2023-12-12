@@ -15,27 +15,25 @@
 
 <body>
     <header>
+        <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a class="link" href="forside.html">Forside</a></li>
+                    <li><a class="link" href="udvalg.html">Vores udvalg</a></li>
+                    <li><a class="link" href="om_os.html">Om os</a></li>
+                    <li><a class="link" href="besoeg_os.html">Besøg os</a></li>
+                    <li><a class="link" href="galleri.html">Galleri</a></li>
+                </ul>
+            </div>
+        </div>
         <img src="images/pexels-clarette-photo-6024413.webp" alt="Galleri" class="background-image">
         <a class="logo" href="forside.html"> <img src="svg/Logo.svg" alt="Logo"></a>
         <h1>Galleri </h1>
-        <nav>
-            <div class="burger-menu">
-                <div class="burger-icon" id="burger-icon">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a class="link" href="forside.html">Forside</a></li>
-                        <li><a class="link" href="udvalg.html">Vores udvalg</a></li>
-                        <li><a class="link" href="om_os.html">Om os</a></li>
-                        <li><a class="link" href="besoeg_os.html">Besøg os</a></li>
-                        <li><a class="link" href="galleri.html">Galleri</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
     <main>
         <h2>Wienerbrød</h2>
@@ -256,6 +254,11 @@
             </div>
         </div>
 
+        <div id="scroll-btns">
+            <button onclick="scrollToSection('wienerbrod')">Wienerbrød</button>
+            <button onclick="scrollImages('prev')">Previous Image</button>
+            <button onclick="scrollImages('next')">Next Image</button>
+        </div>
 
 
 
