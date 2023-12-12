@@ -159,7 +159,7 @@ footer {
 }
 
 .flogo img {
-  width: 60px;
+  width: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -184,7 +184,7 @@ footer ul {
 }
 
 .ffootersome img {
-  width: 50px;
+  width: 100px;
   object-fit: cover;
 }
 
@@ -308,6 +308,7 @@ footer ul {
   p {
     font-family: "crimson text";
     font-size: 20px;
+    margin: 20px;
   }
 
   /*GRID*/
@@ -359,7 +360,7 @@ footer ul {
   .col_3-1 {
     color: #130704;
     padding-top: 0px;
-    padding: 30px;
+    padding: 20px;
     margin: 30px;
     padding-top: 10px;
   }
@@ -367,14 +368,14 @@ footer ul {
   .col_3-1,
   p {
     font-size: 20px;
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+    margin: 60px;
   }
 
   .col_3-2,
   img {
-    aspect-ratio: 1/1;
     width: 80%;
+    object-fit: cover;
   }
 
   .col_2-2,
@@ -383,14 +384,17 @@ footer ul {
     order: 1;
     padding-top: 80px;
     margin-left: 50px;
+    object-fit: cover;
   }
 
   #overskrift {
     color: #130704;
+    padding-bottom: 10px;
   }
 
   #tekst {
     color: #130704;
+    padding-left: 40px;
   }
 
   /*FOOTER*/
@@ -439,7 +443,7 @@ footer ul {
   }
 
   .ffootersome img {
-    width: 60px;
+    width: 100px;
     object-fit: cover;
   }
 
