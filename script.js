@@ -116,23 +116,10 @@ window.addEventListener("load", () => {
 });
 
 //galleri
-document
-  .getElementById("galleryContainer")
-  .addEventListener("scroll", function () {
-    var container = this;
-    var scrollLeft = container.scrollLeft;
-    var maxScrollLeft = container.scrollWidth - container.clientWidth;
-
-    // Opdater knapstatus
-    document.getElementById("prevBtn").disabled = scrollLeft === 0;
-    document.getElementById("nextBtn").disabled = scrollLeft === maxScrollLeft;
-  });
 
 //burgermenu
-burgerMenu.addEventListener("click", function () {
-  console.log("Burger menu clicked!");
-  nav.style.display =
-    nav.style.display === "none" || nav.style.display === "" ? "block" : "none";
+document.getElementById("burger-icon").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
 });
 
 // Show the button when scrolling down
