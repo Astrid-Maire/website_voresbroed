@@ -1,4 +1,4 @@
-header {
+.header {
   position: relative;
 }
 
@@ -17,15 +17,12 @@ main {
   color: #fff;
 }
 
-li {
-  display: list-item;
-}
-
 .link:hover {
   color: #fff;
   text-decoration: underline;
 }
 
+/* Mobile View */
 @media (max-width: 800px) {
   .logo {
     position: absolute;
@@ -33,6 +30,12 @@ li {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    width: 70px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -44,13 +47,18 @@ li {
     font-size: 50px;
   }
 
-  nav {
-    justify-content: space-between;
-  }
-
   .burger-menu {
     position: relative;
-    display: flex;
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
   }
 
   .menu {
@@ -62,55 +70,87 @@ li {
     padding: 10px;
     flex-direction: column;
   }
+
+  header nav {
+    display: none;
+  }
 }
 
+/* Desktop View */
 @media (min-width: 800px) {
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 10%;
-    transform: translateX(-50%);
-    z-index: 1;
+  .burger-menu {
+    display: none;
   }
 
-  header nav ul {
+  header {
     display: flex;
-    list-style: none; /* Fjern punkterne her */
-    padding: 0; /* Tilføj denne linje */
-    margin: 0; /* Tilføj denne linje */
-    gap: 30px;
-    text-decoration: none;
-  }
-
-  .menu {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: white;
-    position: absolute;
-    top: 3%;
-    left: 0;
-    z-index: 10;
     align-items: center;
-    font-family: "crimson text";
-    border-radius: 10px;
-    font-size: 150%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
-  .menu a {
-    display: block;
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
+  .logo {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 2;
   }
 
   h1 {
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     color: white;
     font-size: 150px;
+  }
+
+  nav {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+  }
+
+  header nav ul,
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+    justify-content: flex-end;
+    color: white;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 3; /* Ensure the menu is above the image */
+  }
+
+  header li a,
+  li a {
+    text-decoration: none;
+    font-family: "crimson text";
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 }
