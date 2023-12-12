@@ -13,8 +13,9 @@ img {
   object-fit: cover;
 }
 
+.col_1-2,
 video {
-  width: 50%;
+  width: 100%;
 }
 
 /*MAX 800*/
@@ -91,7 +92,7 @@ h2 {
 .img,
 video {
   padding: 40px;
-  place-items: right;
+  place-items: center;
 }
 
 #overskrift {
@@ -199,6 +200,36 @@ footer ul {
 
 #ffooterinfo {
   font-size: 18px;
+}
+
+/*IMG*/
+
+.col_3-2,
+img {
+  width: 80%;
+  object-fit: cover;
+  padding: 20px;
+  margin: 20px;
+}
+
+.col_2-2,
+img {
+  width: 80%;
+  order: 1;
+  padding: 20px;
+  margin: 30px;
+  object-fit: cover;
+}
+
+/*VIDEO*/
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  place-items: center;
+  padding-left: 30px;
 }
 
 @media (min-width: 800px) {
@@ -335,13 +366,13 @@ footer ul {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   .col_2-1 {
     order: 2;
     color: #130704;
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   .col_2-2 {
@@ -353,29 +384,30 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 20px;
-    padding-top: 50px;
+    padding: 0px;
+    padding-top: 0px;
   }
 
   .col_3-1 {
     color: #130704;
     padding-top: 0px;
     padding: 20px;
-    margin: 30px;
+    margin: 20px;
     padding-top: 10px;
   }
 
   .col_3-1,
   p {
     font-size: 20px;
-    padding: 20px;
-    margin: 60px;
+    padding: 30px;
+    margin: 50px;
   }
 
   .col_3-2,
   img {
     width: 80%;
     object-fit: cover;
+    padding-top: 20px;
   }
 
   .col_2-2,
