@@ -30,12 +30,12 @@ body {
 /* Adresse & Åbningstider */
 .info {
   display: grid;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   background-color: #28524b;
+  order: -1;
 }
 
 .info img {
-  margin: 5px;
   padding: 20px;
 }
 
@@ -60,6 +60,7 @@ body {
 .info h2 {
   font-size: 40px;
   padding: 20px;
+  padding-top: 48px;
 }
 
 /* Adresser */
@@ -170,8 +171,6 @@ body {
     grid-column: 2/1;
   }
   .besoeg_os img {
-    margin-top: 27px;
-    margin-bottom: 61px;
   }
   .besoeg_os_txt {
     margin-top: 125px;
@@ -232,6 +231,11 @@ body {
     margin-left: 149px;
   }
 }
+@media (min-width: 800px) {
+  .a_aa {
+    order: 1;
+  }
+}
 
 .aabningstider {
   color: white;
@@ -263,5 +267,11 @@ body {
 @media (min-width: 800px) {
   .foelg_os_links_txt {
     font-size: 20px;
+    padding: 3px;
+  }
+}
+@media (min-width: 800px) {
+  .foelg_os_links_pic {
+    margin-left: 233px;
   }
 }
