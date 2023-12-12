@@ -28,8 +28,97 @@ main {
 
 /***************** MOBIL SITE *******************/
 @media (max-width: 800px) {
-  .fhero {
+  .udvalg_tekst {
+    padding: 50px;
+    background-color: #130704;
+  }
+
+  .udvalg_tekst p {
+    color: white;
+    text-align: center;
+  }
+
+  .udvalg_tekst {
+    background-color: #130704;
+    text-align: center;
+  }
+
+  .udvalg {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding-top: 10px; */
     margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .udvalg img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .udvalg p {
+    font-family: "zen loop";
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .overskrift_u {
+    display: grid;
+    place-items: center;
+  }
+
+  .overskrift_u img,
+  .overskrift_u h1 {
+    grid-area: 1/1;
+    margin-bottom: 50px;
+  }
+
+  .overskrift_u img {
+    object-fit: cover;
+  }
+
+  .broed_og_boller img {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .overskrift_u h1 {
+    font-family: "zen loop";
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .og_meget_mere {
+    font-family: "zen loop";
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .og_meget_mere p {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .og_meget_mere a {
+    margin-bottom: 50px;
+    font-weight: bolder;
+    color: #28524b;
+  }
+
+  /*************** FOOTER  **********/
+  footer p,
+  footer h1 {
+    color: white;
+  }
+
+  .ffootertop p {
+    font-size: 40px;
   }
 }
 
@@ -197,6 +286,20 @@ main {
     font-family: "zen loop";
     font-weight: bolder;
     font-size: 25px;
+  }
+
+  .og_meget_mere {
+    font-family: "zen loop";
+    text-align: center;
+  }
+  .og_meget_mere a,
+  .og_meget_mere p {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  .og_meget_mere a {
+    color: #28524b;
   }
 
   /*********** FOOTER *************/
