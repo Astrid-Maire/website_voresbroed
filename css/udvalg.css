@@ -13,7 +13,7 @@ h1 {
 
 p {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 img {
@@ -22,35 +22,31 @@ img {
   display: block;
 }
 
-.link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
 main {
   background-color: #ecdfcf;
 }
 
-.container_01 {
-  position: absolute;
-  font-family: "zen loop";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  z-index: 3;
-  font-size: 5em;
+/***************** MOBIL SITE *******************/
+@media (max-width: 800px) {
+  .fhero {
+    margin-bottom: 100px;
+  }
 }
 
+/***************** DESKTOP SITE *****************/
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 
   header {
@@ -111,7 +107,7 @@ main {
   .fhero {
     display: grid;
     place-items: center;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
   img,
@@ -166,11 +162,26 @@ main {
     margin: 0;
   }
 
+  .udvalg_tekst {
+    background-color: #130704;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .udvalg_tekst p {
+    color: white;
+  }
+
   .udvalg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 100px;
-    padding: 20px;
+    gap: 20px;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
   }
 
   .udvalg img {
@@ -240,6 +251,11 @@ main {
   .ffootercopy {
     font-size: 15px;
     margin-top: 30px;
+  }
+
+  .ffootertop p {
+    font-family: "zen loop";
+    font-size: 40px;
   }
 
   #scrollToTopBtn {
