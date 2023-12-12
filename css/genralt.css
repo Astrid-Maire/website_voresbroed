@@ -7,6 +7,25 @@ header {
   height: auto;
 }
 
+main {
+  margin: 20px 20px 20px;
+  line-height: 190%;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  display: list-item;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .logo {
     position: absolute;
@@ -25,29 +44,46 @@ header {
     transform: translateX(-50%);
     z-index: 1;
   }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
 .menu {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  border: 1px solid #000000;
   border-radius: 10px;
-  display: flex; /* Gør menuen vandret */
-  flex-direction: row; /* Indstil retningen til vandret */
-  align-items: center; /* Centrer indholdet vandret */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "crimson text";
 }
 
 .menu a {
   display: block;
-  margin: 0 20px; /* Tilføj mellemrum mellem menuelementer */
+  margin: 0 20px;
   text-decoration: none;
-  color: #000000;
+  color: white;
 }
 
 .menu.active {
@@ -73,14 +109,4 @@ header {
     padding: 10px;
     flex-direction: column;
   }
-}
-
-.background-image {
-  width: 100%;
-  height: auto;
-}
-
-main {
-  margin: 20px 20px 20px;
-  line-height: 190%;
 }

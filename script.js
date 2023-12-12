@@ -140,6 +140,8 @@ window.addEventListener("load", () => {
 //galleri
 
 //burgermenu
+
+//burgermenu
 <<<<<<< HEAD
 burgerMenu.addEventListener("click", function () {
   console.log("Burger menu clicked!");
