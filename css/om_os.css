@@ -322,6 +322,7 @@ footer ul {
 
   .col_1-1 {
     padding-top: 10px;
+    padding-left: 20px;
   }
 
   .col_1-2 {
@@ -339,7 +340,7 @@ footer ul {
   .col_2-1 {
     order: 2;
     color: #130704;
-    padding-top: 35px;
+    padding-top: 100px;
   }
 
   .col_2-2 {
@@ -360,6 +361,7 @@ footer ul {
     padding-top: 0px;
     padding: 30px;
     margin: 30px;
+    padding-top: 10px;
   }
 
   .col_3-1,
@@ -372,6 +374,15 @@ footer ul {
   .col_3-2,
   img {
     aspect-ratio: 1/1;
+    width: 80%;
+  }
+
+  .col_2-2,
+  img {
+    width: 80%;
+    order: 1;
+    padding-top: 80px;
+    margin-left: 50px;
   }
 
   #overskrift {
@@ -456,7 +467,7 @@ footer ul {
 
   img,
   video {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
   }
