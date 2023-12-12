@@ -145,8 +145,7 @@ function scrollToSection(sectionId) {
 
 function scrollImages(direction) {
   var imageContainer = document.querySelector("." + direction);
-  var scrollAmount =
-    direction === "next" ? window.innerWidth : -window.innerWidth;
+  var scrollAmount = direction === "next" ? window.innerWidth : -window.innerWidth;
   imageContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
 }
 
