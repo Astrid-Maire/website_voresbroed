@@ -208,16 +208,18 @@ footer ul {
 img {
   width: 80%;
   object-fit: cover;
-  padding: 20px;
-  margin: 20px;
+  padding: 0px;
+  margin: 10px;
+  padding-bottom: 10px;
 }
 
 .col_2-2,
 img {
   width: 80%;
   order: 1;
-  padding: 20px;
-  margin: 30px;
+  padding: 0px;
+  margin: 10px;
+  padding-bottom: 10px;
   object-fit: cover;
 }
 
@@ -230,6 +232,7 @@ video {
   display: block;
   place-items: center;
   padding-left: 30px;
+  margin-left: 20px;
 }
 
 @media (min-width: 800px) {
