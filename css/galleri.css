@@ -2,11 +2,6 @@ body {
   background-color: #ecdfcf;
 }
 
-h2 {
-  display: flex;
-  justify-content: center;
-}
-
 .background-image {
   width: 100%;
 }
@@ -16,7 +11,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-  .Wienerbrød,
+  .wienerbrod,
   .Boller,
   .Broed,
   .snegle,
