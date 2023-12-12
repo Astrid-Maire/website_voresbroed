@@ -138,6 +138,17 @@ window.addEventListener("load", () => {
 });
 
 //galleri
+function scrollToSection(sectionId) {
+  var section = document.querySelector("." + sectionId);
+  section.scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollImages(direction) {
+  var imageContainer = document.querySelector("." + direction);
+  var scrollAmount =
+    direction === "next" ? window.innerWidth : -window.innerWidth;
+  imageContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+}
 
 //burgermenu
 document.addEventListener("DOMContentLoaded", function () {
