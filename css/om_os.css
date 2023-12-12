@@ -10,6 +10,7 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 /*MAX 800*/
@@ -357,7 +358,8 @@ footer ul {
 
   .col_3-1,
   p {
-    font-size: 28px;
+    font-size: 20px;
+    padding: 5px;
   }
 
   .col_3-2,
