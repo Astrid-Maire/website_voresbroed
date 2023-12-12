@@ -7,9 +7,14 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
+  object-fit: cover;
+}
+
+video {
+  width: 50%;
 }
 
 /*MAX 800*/
@@ -85,7 +90,7 @@ h2 {
 
 .img,
 video {
-  padding: 20px;
+  padding: 40px;
   place-items: right;
 }
 
@@ -154,7 +159,7 @@ footer {
 }
 
 .flogo img {
-  width: 100px;
+  width: 60px;
   display: block;
   margin: 0 auto;
 }
@@ -317,6 +322,7 @@ footer ul {
 
   .col_1-1 {
     padding-top: 10px;
+    padding-left: 20px;
   }
 
   .col_1-2 {
@@ -327,14 +333,14 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
     padding-top: 50px;
   }
 
   .col_2-1 {
     order: 2;
     color: #130704;
-    padding-top: 35px;
+    padding-top: 100px;
   }
 
   .col_2-2 {
@@ -353,16 +359,30 @@ footer ul {
   .col_3-1 {
     color: #130704;
     padding-top: 0px;
+    padding: 30px;
+    margin: 30px;
+    padding-top: 10px;
   }
 
   .col_3-1,
   p {
-    font-size: 28px;
+    font-size: 20px;
+    padding: 30px;
+    margin: 30px;
   }
 
   .col_3-2,
   img {
     aspect-ratio: 1/1;
+    width: 80%;
+  }
+
+  .col_2-2,
+  img {
+    width: 80%;
+    order: 1;
+    padding-top: 80px;
+    margin-left: 50px;
   }
 
   #overskrift {
@@ -441,5 +461,14 @@ footer ul {
 
   #ffooterinfo {
     font-size: 18px;
+  }
+
+  /*VIDEO*/
+
+  img,
+  video {
+    width: 90%;
+    height: auto;
+    display: block;
   }
 }
