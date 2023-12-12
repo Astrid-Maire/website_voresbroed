@@ -171,7 +171,17 @@ body {
     grid-column: 2/1;
   }
   .besoeg_os img {
-    margin-top: -50px;
+    margin-top: 27px;
+    margin-bottom: 28px;
+  }
+  .besoeg_os_txt {
+    margin-top: 33px;
+  }
+  .besoeg_os_txt h2 {
+    font-size: 70px;
+  }
+  .besoeg_os_txt p {
+    font-size: 20px;
   }
 }
 
@@ -183,12 +193,13 @@ body {
     grid-template-rows: 1fr;
   }
 }
+
 @media (min-width: 800px) {
   .info img {
     order: -1;
     padding: 80px;
-    height: 600px;
-    width: 600px;
+    height: 609px;
+    width: 679px;
   }
 }
 
@@ -196,16 +207,28 @@ body {
   .adresser {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-right: 24px;
   }
   .adresser p {
     display: grid;
     grid-column: 2/2;
+    font-size: 20px;
   }
   .adresser h2 {
     display: grid;
     grid-column: 2/2;
+    font-size: 70px;
   }
 }
+@media (min-width: 800px) {
+  .aabningstiderp {
+    font-size: 20px;
+  }
+  .aabningstider h2 {
+    font-size: 70px;
+  }
+}
+
 /* ------------------------------------------------ */
 /* Sociale medier */
 @media (min-width: 800px) {
@@ -214,24 +237,18 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-/* @media (min-width: 800px) {
-  .socialemedier {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 800px) {
+  .foelg_os_links {
+    margin-top: 20px;
   }
-  .socialemedier h2 {
-    display: grid;
-    grid-column: 1/1;
-    margin-top: 0px;
+}
+@media (min-width: 800px) {
+  .foelg_os h2 {
+    font-size: 70px;
   }
-  .socialemedier p {
-    display: grid;
-    grid-column: 1/1;
+}
+@media (min-width: 800px) {
+  .foelg_os_links_txt {
+    font-size: 20px;
   }
-  .socialemedier img {
-    display: grid;
-    grid-column: 2/2;
-    margin-top: 50px;
-  }
-} */
+}
