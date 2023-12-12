@@ -12,18 +12,19 @@ img {
 main {
   background-color: #ecdfcf;
 }
-
-/* Billede på forside  */
+body {
+  background-color: #ecdfcf;
+}
+/* tekst på Billede i header */
 .container_01 {
   position: absolute;
-  font-family: "zen loop";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  font-size: 30px;
   text-align: center;
-  z-index: 3;
-  font-size: 5em;
+  position: absolute;
+  font-family: "zen loop";
 }
 
 /* Adresse & Åbningstider */
@@ -40,6 +41,20 @@ main {
 
 .adresser {
   text-align: center;
+}
+
+.adresser h2 {
+  font-family: "zen loop";
+}
+.adresser p {
+  font-family: "crimson text";
+}
+
+.aabningstider h2 {
+  font-family: "zen loop";
+}
+.aabningstider p {
+  font-family: "crimson text";
 }
 
 .info h2 {
@@ -64,33 +79,46 @@ main {
 
 
 /* sociale medier */
-.socialemedier {
-  text-align: center;
-  margin-top: 20px;
-}
-.socialemedier p,
-img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.socialemedier p {
-  margin-left: 100px;
-  padding: 10px;
-  grid-column: 2/1;
-}
 .socialemedier h2 {
-  padding: 20px;
-  font-size: 35px;
-}
-.SoMe_img {
-  margin: 5px;
-  padding: 17px;
-}
-.socialemedier img {
-  width: 30px;
-  bottom: -100px;
+  font-family: "zen loop";
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
+.foelg_os_links {
+  font-family: "crimson text";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.foelg_os_links_pic {
+  width: 30px;
+}
+
+.foelg_os_links_pic {
+  order: -1;
+  margin-left: 170px;
+}
+
+.foelg_os_links p {
+  grid-column: 2/2;
+  margin-top: 30px;
+}
+
+.foelg_os_links_txt {
+  padding: 10px;
+}
+.foelg_os_links img {
+  grid-column: 1/1;
+  margin-top: 30px;
+}
+.foelg_os_pic {
+  margin: 5px;
+  padding: 20px;
+}
+
+/* ------------------------------ */
 /* Besøg os */
 .besoeg_os {
   text-align: center;
@@ -103,12 +131,31 @@ img {
 .besoeg_os h2 {
   padding: 15px;
   font-size: 35px;
+  font-family: "zen loop";
+}
+.besoeg_os p {
+  font-family: "crimson text";
 }
 
 /* layoutdiagram-------------------- */
 .hero_5 h2 {
   font-size: 45px;
   background-size: cover;
+}
+
+/* Billede på forside  */
+@media (min-width: 800px) {
+  .container_01 {
+    position: absolute;
+    font-family: "zen loop";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 3;
+    font-size: 5em;
+  }
 }
 
 /* ------------------------------------------------ */
@@ -166,6 +213,13 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* @media (min-width: 800px) {
+  .socialemedier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .socialemedier h2 {
     display: grid;
     grid-column: 1/1;
@@ -180,4 +234,4 @@ img {
     grid-column: 2/2;
     margin-top: 50px;
   }
-}
+} */

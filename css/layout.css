@@ -183,7 +183,7 @@ h1 {
     padding-left: 15px;
   }
 
-<<<<<<< HEAD
+
   .menu {
     width: 100%;
     display: flex;
@@ -213,7 +213,8 @@ h1 {
     height: auto;
     object-fit: cover;
     position: absolute;
-=======
+  }
+
   .container_01 {
     position: absolute;
     font-family: "zen loop";
@@ -227,7 +228,6 @@ h1 {
   }
 
   .menu {
->>>>>>> 5ce05f1ff56af65078ae5e5cf1669ed39560bcba
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -243,15 +243,15 @@ h1 {
     position: relative;
   }
 
-<<<<<<< HEAD
+
   .heru_4 {
-=======
+
   .fheadermobile {
     position: relative;
   }
 
   .heru {
->>>>>>> 5ce05f1ff56af65078ae5e5cf1669ed39560bcba
+
     position: relative;
     width: 100%;
   }
