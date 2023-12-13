@@ -214,7 +214,7 @@ body {
   .a_aa {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-right: 24px;
+    margin-bottom: 80px;
   }
   .adresser p {
     display: grid;

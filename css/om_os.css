@@ -140,8 +140,10 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 20px;
     padding-top: 50px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .col_1-1 {
@@ -186,7 +188,8 @@ img {
   }
 
   .col_2-2 img {
-    width: 500px;
+    height: 550px;
+    max-width: 550px;
     margin-left: 100px;
   }
 
@@ -221,8 +224,9 @@ img {
 
   .col_3-2 img {
     height: 550px;
-    padding-top: 50px;
-    margin-right: 100px;
+    max-width: 550px;
+    padding-top: 90px;
+    margin-left: 50px;
   }
 
   #overskrift {
@@ -238,8 +242,10 @@ img {
   /*VIDEO*/
 
   video {
-    width: 90%;
+    width: 70%;
     height: auto;
     display: block;
+    margin-left: 60px;
+    margin-top: 50px;
   }
 }
