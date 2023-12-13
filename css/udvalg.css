@@ -29,13 +29,18 @@ main {
 /***************** MOBIL SITE *******************/
 @media (max-width: 800px) {
   .udvalg_tekst {
-    padding: 50px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 70px;
     background-color: #130704;
   }
 
   .udvalg_tekst p {
+    font-size: 15px;
     color: white;
     text-align: center;
+    font-family: "crimson text";
   }
 
   .udvalg_tekst {
@@ -274,7 +279,10 @@ main {
     padding-right: 100px;
     padding-top: 50px;
     padding-bottom: 50px; */
-    padding: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 80px;
+    padding-top: 120px;
   }
 
   .udvalg_tekst p {
