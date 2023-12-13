@@ -1,4 +1,36 @@
 @media (max-width: 800px) {
+  .catchfrase {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #ece3d8;
+    color: black;
+    font-family: "zen loop";
+    text-align: center;
+    font-size: 30px;
+  }
+  .section1 {
+    background-color: #ecdfcf;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .galleri1 img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  .section2 {
+    background-color: #ece3d8;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .galleri2 img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -17,7 +49,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
   .galleri1 {
     display: flex;
     justify-content: center;
@@ -48,10 +79,5 @@
     width: 400px;
     height: 400px;
     object-fit: cover;
-  }
-
-  .galleri3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
