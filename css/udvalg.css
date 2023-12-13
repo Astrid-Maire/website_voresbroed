@@ -45,16 +45,46 @@ main {
 
   .udvalg {
     display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .udvalg_elementer {
+    display: grid;
+    grid-template-rows: min-content;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .udvalg_elementer > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  /* .wienerbroed {
+    display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     gap: 20px;
     padding-left: 50px;
-    padding-right: 50px;
-    /* padding-top: 10px; */
-    margin-bottom: 100px;
+    padding-right: 50px; */
+  /* padding-top: 10px; */
+  /* margin-bottom: 100px;
     text-align: center;
+  } */
+
+  .wienerbroed {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-  .udvalg img {
+  .wienerbroed img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -138,18 +168,6 @@ main {
     text-decoration: underline;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
-    /* margin-bottom: 30px;
-    margin-bottom: 100px; */
-    background-color: #130704;
-  }
-
   .logo {
     width: 180px;
     object-fit: cover;
@@ -193,27 +211,9 @@ main {
     text-decoration: underline;
   }
 
-  .fhero {
-    display: grid;
-    place-items: center;
-    /* margin-bottom: 100px; */
-  }
-
   img,
   h1 {
     grid-area: 1 / 1;
-  }
-
-  .fhero img {
-    height: 690px;
-    object-fit: cover;
-  }
-
-  .fhero h1 {
-    font-family: "zen loop";
-    font-size: 130px;
-    color: white;
-    letter-spacing: 4px;
   }
 
   /* Main */
@@ -267,16 +267,40 @@ main {
 
   .udvalg {
     display: grid;
+    gap: 75px;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .udvalg_elementer {
+    display: grid;
+    grid-template-rows: min-content;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .udvalg_elementer > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .wienerbroed {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* gap: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
     padding-top: 20px;
     margin-bottom: 100px;
     text-align: center;
   }
 
-  .udvalg img {
+  .wienerbroed > img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -286,6 +310,7 @@ main {
     font-family: "zen loop";
     font-weight: bolder;
     font-size: 25px;
+    text-align: center;
   }
 
   .og_meget_mere {
@@ -294,7 +319,7 @@ main {
   }
   .og_meget_mere a,
   .og_meget_mere p {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     padding-bottom: 50px;
   }
