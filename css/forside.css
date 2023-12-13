@@ -303,13 +303,27 @@ img {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
   }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* CSS for burger menu icon */
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 800px) {
   /*HEADER*/
 
+  .nav-links {
+    display: block; /* Display navigation links on larger screens */
+  }
+
   .burger-menu {
-    display: none;
+    display: none; /* Hide burger menu on larger screens */
   }
 
   header {

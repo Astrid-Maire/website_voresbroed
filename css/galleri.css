@@ -1,1 +1,83 @@
+@media (max-width: 800px) {
+  .catchfrase {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #ece3d8;
+    color: black;
+    font-family: "zen loop";
+    text-align: center;
+    font-size: 30px;
+  }
+  .section1 {
+    background-color: #ecdfcf;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
+  .galleri1 img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  .section2 {
+    background-color: #ece3d8;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .galleri2 img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .catchfrase {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ece3d8;
+    color: black;
+    font-family: "zen loop";
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .section1 {
+    background-color: #ecdfcf;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .galleri1 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .galleri1 img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .section2 {
+    background-color: #ece3d8;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .galleri2 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .galleri2 img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
