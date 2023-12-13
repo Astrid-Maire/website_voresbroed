@@ -16,6 +16,35 @@ img {
 @media (max-width: 800px) {
   /*HEADER*/
 
+  .burger-nav {
+    font-family: crimson text;
+    color: #130704;
+    background-color: #ecdfcf;
+    position: absolute;
+    width: 100%;
+    height: 200vh;
+    top: 0;
+    left: -1000px;
+    z-index: 90;
+  }
+  .burger-nav ul li {
+    list-style-type: none;
+  }
+
+  .burger-nav ul li a {
+    text-decoration: none;
+  }
+
+  .burger-divider {
+    display: flex;
+    justify-content: end;
+  }
+  .burger-divider img {
+    width: 20%;
+  }
+  .burger-divider div p {
+    cursor: pointer;
+  }
   header {
     position: relative;
     width: 100%;
@@ -55,7 +84,7 @@ img {
     margin-top: 600px;
   }
 
-  header nav {
+  .menu {
     display: none;
   }
 
@@ -77,13 +106,27 @@ img {
     display: block;
     margin-top: 25px;
     margin-left: 20px;
+    cursor: pointer;
+    z-index: 99;
   }
 
   .bar {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: black;
     margin: 9px 0;
+    transform-origin: left;
+    transition: all 0.4s ease;
+  }
+
+  .cross .bar:nth-child(1) {
+    rotate: 48deg;
+  }
+  .cross .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .cross .bar:nth-child(3) {
+    rotate: -48deg;
   }
 
   /*FOOTER*/
@@ -199,6 +242,10 @@ img {
     display: none;
   }
 
+  .burger-nav {
+    display: none;
+  }
+
   header {
     position: relative;
     width: 100%;
@@ -244,7 +291,7 @@ img {
     padding-left: 70px;
   }
 
-  nav {
+  .menu {
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -391,4 +438,9 @@ img {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
   }
+}
+
+.active {
+  top: 0;
+  left: 0;
 }

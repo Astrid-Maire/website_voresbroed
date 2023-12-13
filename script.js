@@ -1,9 +1,12 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  const burger = document.querySelector(".burger-menu");
+const menu = document.querySelector(".burger-nav");
+const burger = document.querySelector(".burger-menu");
+const close = document.querySelector(".kryds");
 
+burger.addEventListener("click", toggleMenu);
+close.addEventListener("click", toggleMenu);
+function toggleMenu() {
   menu.classList.toggle("active");
-  burger.classList.toggle("change");
+  burger.classList.toggle("cross")
 }
 
 // Show the button when scrolling down
@@ -158,11 +161,11 @@ function scrollImages(direction) {
 }
 
 //burgermenu
-document.addEventListener("DOMContentLoaded", function () {
-  var burgerIcon = document.getElementById("burger-icon");
-  var menu = document.querySelector(".menu");
+// {document.addEventListener("DOMContentLoaded", function () {
+//   var burgerIcon = document.getElementById("burger-icon");
+//   var menu = document.querySelector(".menu");
 
-  burgerIcon.addEventListener("click", function () {
-    menu.classList.toggle("active");
-  });
-});
+//   burgerIcon.addEventListener("click", function () {
+//     menu.classList.toggle("active");
+//   });
+// });}
