@@ -53,6 +53,22 @@ main {
     overscroll-behavior-inline: contain;
   }
 
+  .udvalg_w {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .froesnapper {
+    width: 170px;
+    font-family: "zen loop";
+  }
+
+  .croissanter {
+    width: 170px;
+    font-family: "zen loop";
+  }
+
   .udvalg_elementer {
     display: grid;
     grid-template-rows: min-content;
@@ -273,6 +289,21 @@ main {
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+  }
+
+  .udvalg_w {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "zen loop";
+  }
+
+  .froesnapper {
+    width: 450px;
+  }
+
+  .croissanter {
+    width: 450px;
   }
 
   .udvalg_elementer {
