@@ -283,12 +283,19 @@ main {
 
   .udvalg {
     display: grid;
-    gap: 75px;
+    gap: 40px;
     grid-auto-flow: column;
     grid-auto-columns: 40%;
+    margin-top: 40px;
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+  }
+
+  .udvalg img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
   }
 
   .udvalg_w {
@@ -296,14 +303,15 @@ main {
     justify-content: center;
     gap: 20px;
     font-family: "zen loop";
+    margin-top: 40px;
   }
 
   .froesnapper {
-    width: 450px;
+    width: 400px;
   }
 
   .croissanter {
-    width: 450px;
+    width: 400px;
   }
 
   .udvalg_elementer {
@@ -342,6 +350,7 @@ main {
     font-weight: bolder;
     font-size: 25px;
     text-align: center;
+    margin-right: 70px;
   }
 
   .og_meget_mere {
