@@ -1,3 +1,11 @@
+function toggleMenu() {
+  const menu = document.querySelector(".menu");
+  const burger = document.querySelector(".burger-menu");
+
+  menu.classList.toggle("active");
+  burger.classList.toggle("change");
+}
+
 // Show the button when scrolling down
 window.onscroll = function () {
   scrollFunction();
@@ -145,8 +153,7 @@ function scrollToSection(sectionId) {
 
 function scrollImages(direction) {
   var imageContainer = document.querySelector("." + direction);
-  var scrollAmount =
-    direction === "next" ? window.innerWidth : -window.innerWidth;
+  var scrollAmount = direction === "next" ? window.innerWidth : -window.innerWidth;
   imageContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
 }
 
