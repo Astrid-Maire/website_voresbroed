@@ -129,6 +129,10 @@ img {
     rotate: -48deg;
   }
 
+  .navheader {
+    display: none;
+  }
+
   /*FOOTER*/
 
   footer {
