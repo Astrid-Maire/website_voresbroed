@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #ecdfcf;
+  background-color: #130704;
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 p {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 img {
@@ -22,46 +22,171 @@ img {
   display: block;
 }
 
-.link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
 main {
   background-color: #ecdfcf;
 }
 
-.container_01 {
-  position: absolute;
-  font-family: "zen loop";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  z-index: 3;
-  font-size: 5em;
+/***************** MOBIL SITE *******************/
+@media (max-width: 800px) {
+  .udvalg_tekst {
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 70px;
+    background-color: #130704;
+  }
+
+  .udvalg_tekst p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: "crimson text";
+  }
+
+  .udvalg_tekst {
+    background-color: #130704;
+    text-align: center;
+  }
+
+  .udvalg {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .udvalg_w {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .froesnapper {
+    width: 170px;
+    font-family: "zen loop";
+  }
+
+  .croissanter {
+    width: 170px;
+    font-family: "zen loop";
+  }
+
+  .udvalg_elementer {
+    display: grid;
+    grid-template-rows: min-content;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .udvalg_elementer > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  /* .wienerbroed {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px; */
+  /* padding-top: 10px; */
+  /* margin-bottom: 100px;
+    text-align: center;
+  } */
+
+  .wienerbroed {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .wienerbroed img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .udvalg p {
+    font-family: "zen loop";
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .overskrift_u {
+    display: grid;
+    place-items: center;
+  }
+
+  .overskrift_u img,
+  .overskrift_u h1 {
+    grid-area: 1/1;
+    margin-bottom: 50px;
+  }
+
+  .overskrift_u img {
+    object-fit: cover;
+  }
+
+  .broed_og_boller img {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .overskrift_u h1 {
+    font-family: "zen loop";
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .og_meget_mere {
+    font-family: "zen loop";
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .og_meget_mere p {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .og_meget_mere a {
+    margin-bottom: 50px;
+    font-weight: bolder;
+    color: #28524b;
+  }
+
+  /*************** FOOTER  **********/
+  footer p,
+  footer h1 {
+    color: white;
+  }
+
+  .ffootertop p {
+    font-size: 40px;
+  }
 }
 
+/***************** DESKTOP SITE *****************/
 @media (min-width: 800px) {
   .burger-menu {
     display: none;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-bottom: 100px;
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .link:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 
   .logo {
@@ -107,6 +232,11 @@ main {
     text-decoration: underline;
   }
 
+  img,
+  h1 {
+    grid-area: 1 / 1;
+  }
+
   /* Main */
 
   /******* OVERSKRIFTSBILLEDE ************/
@@ -118,7 +248,7 @@ main {
   .overskrift_u img,
   .overskrift_u h1 {
     grid-area: 1/1;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   .overskrift_u img {
@@ -142,17 +272,107 @@ main {
     margin: 0;
   }
 
+  .udvalg_tekst {
+    background-color: #130704;
+    text-align: center;
+    /* padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px; */
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 80px;
+    padding-top: 120px;
+  }
+
+  .udvalg_tekst p {
+    color: white;
+  }
+
   .udvalg {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 100px;
-    padding: 20px;
+    gap: 40px;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    margin-top: 40px;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
   }
 
   .udvalg img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .udvalg_w {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "zen loop";
+    margin-top: 40px;
+  }
+
+  .froesnapper {
+    width: 400px;
+  }
+
+  .croissanter {
+    width: 400px;
+  }
+
+  .udvalg_elementer {
+    display: grid;
+    grid-template-rows: min-content;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .udvalg_elementer > img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+
+  .wienerbroed {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    /* gap: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .wienerbroed > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .udvalg p {
+    font-family: "zen loop";
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 70px;
+  }
+
+  .og_meget_mere {
+    font-family: "zen loop";
+    text-align: center;
+  }
+  .og_meget_mere a,
+  .og_meget_mere p {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  .og_meget_mere a {
+    color: #28524b;
   }
 
   /*********** FOOTER *************/
@@ -216,6 +436,11 @@ main {
   .ffootercopy {
     font-size: 15px;
     margin-top: 30px;
+  }
+
+  .ffootertop p {
+    font-family: "zen loop";
+    font-size: 40px;
   }
 
   #scrollToTopBtn {

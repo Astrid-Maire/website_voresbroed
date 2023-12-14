@@ -30,12 +30,12 @@ body {
 /* Adresse & Åbningstider */
 .info {
   display: grid;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   background-color: #28524b;
+  order: -1;
 }
 
 .info img {
-  margin: 5px;
   padding: 20px;
 }
 
@@ -60,6 +60,7 @@ body {
 .info h2 {
   font-size: 40px;
   padding: 20px;
+  padding-top: 48px;
 }
 
 /* Adresser */
@@ -75,8 +76,7 @@ body {
   text-align: center;
   display: grid;
   place-content: center;
-} /*
-
+}
 
 /* sociale medier */
 .socialemedier h2 {
@@ -98,7 +98,7 @@ body {
 
 .foelg_os_links_pic {
   order: -1;
-  margin-left: 170px;
+  margin-left: 230px;
 }
 
 .foelg_os_links p {
@@ -108,6 +108,10 @@ body {
 
 .foelg_os_links_txt {
   padding: 10px;
+}
+.foelg_os_links a {
+  text-decoration: none;
+  color: black;
 }
 .foelg_os_links img {
   grid-column: 1/1;
@@ -123,6 +127,7 @@ body {
 .besoeg_os {
   text-align: center;
   margin-top: 20px;
+  padding-top: 52px;
 }
 .besoeg_os img {
   margin: 5px;
@@ -165,17 +170,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     order: 1;
+    margin-bottom: 20px;
   }
   .besoeg_os p {
     display: grid;
     grid-column: 2/1;
   }
   .besoeg_os img {
-    margin-top: 27px;
-    margin-bottom: 28px;
+    width: 572px;
+    height: 480px;
+    margin-left: 94px;
   }
   .besoeg_os_txt {
-    margin-top: 33px;
+    margin-top: 125px;
   }
   .besoeg_os_txt h2 {
     font-size: 70px;
@@ -204,10 +211,10 @@ body {
 }
 
 @media (min-width: 800px) {
-  .adresser {
+  .a_aa {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-right: 24px;
+    margin-bottom: 80px;
   }
   .adresser p {
     display: grid;
@@ -221,12 +228,29 @@ body {
   }
 }
 @media (min-width: 800px) {
-  .aabningstiderp {
+  .aabningstider p {
     font-size: 20px;
   }
   .aabningstider h2 {
     font-size: 70px;
   }
+}
+@media (min-width: 800px) {
+  .aabningstider {
+    margin-left: 149px;
+  }
+}
+@media (min-width: 800px) {
+  .a_aa {
+    order: 1;
+  }
+}
+
+.aabningstider {
+  color: white;
+  text-align: center;
+  display: grid;
+  place-content: center;
 }
 
 /* ------------------------------------------------ */
@@ -235,6 +259,8 @@ body {
   .socialemedier {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 54px;
+    padding-bottom: 54px;
   }
 }
 @media (min-width: 800px) {
@@ -250,5 +276,18 @@ body {
 @media (min-width: 800px) {
   .foelg_os_links_txt {
     font-size: 20px;
+    padding: 3px;
+  }
+}
+@media (min-width: 800px) {
+  .foelg_os_links_pic {
+    margin-left: 233px;
+  }
+
+  .foelg_os_pic img {
+    margin-left: 90px;
+    height: 420px;
+    width: 500px;
+    object-fit: cover;
   }
 }
