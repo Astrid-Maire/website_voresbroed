@@ -144,11 +144,25 @@ function scrollToSection(sectionId) {
 }
 
 function scrollImages(direction) {
-  var imageContainer = document.querySelector("." + direction);
+  var imageContainer = document.querySelector(".wienerbrod");
   var scrollAmount =
     direction === "next" ? window.innerWidth : -window.innerWidth;
   imageContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
 }
+
+function toggleButtons() {
+  var scrollBtns = document.getElementById("scroll-btns");
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth <= 800) {
+    scrollBtns.style.display = "block";
+  } else {
+    scrollBtns.style.display = "none";
+  }
+}
+
+window.onload = toggleButtons;
+window.onresize = toggleButtons;
 
 //burgermenu
 document.addEventListener("DOMContentLoaded", function () {
